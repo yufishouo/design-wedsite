@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F4F3F0" />
+    <meta name="description" content="深入了解大雋室內裝潢設計工作室的專案細節與設計思維。從空間破解到材質工法，見證我們如何化解居住痛點。" />
+    <title>專案詳情 | 大雋室內裝潢設計工作室</title>
+    <!-- OpenGraph -->
+    <meta property="og:title" content="專案詳情 | 大雋室內裝潢設計工作室">
+    <meta property="og:description" content="深入了解大雋工作室的專案細節與設計思維。">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://dajun-studio.com">
+    <meta property="og:type" content="website">
+    <!-- CSS injected by main.js -->
+    <style>
+      /* Case Study Specific Styles */
+      .cs-hero {
+        height: 100vh;
+        min-height: 600px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 80px;
+        color: var(--color-white);
+      }
+      .cs-hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -2;
+      }
+      .cs-hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.8));
+        z-index: -1;
+      }
+      
+      .cs-split {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .cs-split > div {
+        flex: 1 1 50%;
+        min-width: 300px;
+      }
+      .cs-split-text {
+        padding: 8% 5%;
+        background-color: var(--color-white);
+      }
+      .cs-split-image {
+        position: relative;
+      }
+      .cs-split-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .cs-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 100px 5%;
+      }
+      .gallery-item:nth-child(2) {
+        grid-row: span 2;
+      }
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+
+      @media (max-width: 768px) {
+        .cs-split { flex-direction: column; }
+        .cs-split-text { padding: 15% 5%; }
+        .cs-gallery { padding: 60px 5%; grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body data-header-theme="transparent">
+    <div id="preloader" class="site-preloader">
+      <div class="preloader-text">大雋室內裝潢設計工作室</div>
+    </div>
+    
+    <main>
+      <!-- Hero Image -->
+      <section class="cs-hero fade-up">
+        <img id="cs-hero-img" src="" alt="Project Hero" class="cs-hero-bg" />
+        <div class="cs-hero-overlay"></div>
+        <div class="container fade-up stagger-2">
+          <span id="cs-meta" class="text-sm" style="color: var(--color-accent); letter-spacing: 0.1em;"></span>
+          <h1 id="cs-title" class="heading-large" style="margin-top: 1rem;"></h1>
+        </div>
+      </section>
+
+      <!-- Challenge & Solution -->
+      <section class="cs-split">
+        <div class="cs-split-text fade-up">
+          <h2 class="heading-medium" style="margin-bottom: 2rem;">設計思維</h2>
+          <h3 class="heading-small" style="color: var(--color-accent); font-size: 1.5rem;">Challenge</h3>
+          <p id="cs-challenge" style="margin-bottom: 3rem;"></p>
+          
+          <h3 class="heading-small" style="color: var(--color-accent); font-size: 1.5rem;">Solution</h3>
+          <p id="cs-solution"></p>
+        </div>
+        <div class="cs-split-image img-reveal fade-up">
+          <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1200&q=80" alt="Before and After Concept" />
+        </div>
+      </section>
+
+      <!-- Image Gallery -->
+      <section class="cs-gallery" id="cs-gallery">
+        <!-- Rendered by JS -->
+      </section>
+
+      <!-- Next Project -->
+      <section id="next-project-container">
+        <!-- Rendered by JS -->
+      </section>
+      
+    </main>
+    
+    <script type="module">
+      import '/src/main.js';
+      import { initCaseStudy } from '/src/utils/cms.js';
+      import { initAnimations } from '/src/utils/animations.js';
+      document.addEventListener('DOMContentLoaded', () => {
+        initCaseStudy();
+        setTimeout(() => initAnimations(), 100);
+      });
+    </script>
+  </body>
+</html>

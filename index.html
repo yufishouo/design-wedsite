@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F4F3F0" />
+    <meta name="description" content="大雋室內裝潢設計工作室 - 專注於中高級住宅設計。我們深信最好的設計是隱形的，透過精準比例與材質，為您的靈魂造境。" />
+    <title>大雋室內裝潢設計工作室 | 為生活留白，為靈魂造境</title>
+    <!-- OpenGraph -->
+    <meta property="og:title" content="大雋室內裝潢設計工作室 | Dajun Studio">
+    <meta property="og:description" content="頂級室內設計與空間美學。我們專注於創造極簡、優雅且具備深度的居住體驗。">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://dajun-studio.com">
+    <meta property="og:type" content="website">
+    <!-- CSS will be injected by Vite from main.js -->
+    <style>
+      /* Home Specific Styles */
+      .hero {
+        height: 100vh;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        color: var(--color-white);
+      }
+      .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -2;
+      }
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(44, 44, 44, 0.4);
+        z-index: -1;
+      }
+      .hero-content {
+        max-width: 800px;
+        padding: 0 5%;
+      }
+      .hero-subtitle {
+        font-family: var(--font-body);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        display: block;
+      }
+
+      /* 50/50 Split */
+      .split-section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .split-text, .split-image {
+        flex: 1 1 50%;
+        min-width: 300px;
+      }
+      .split-text {
+        padding: 10% 8%;
+      }
+      .split-image img {
+        width: 100%;
+        height: 100vh;
+        max-height: 800px;
+        object-fit: cover;
+      }
+
+      /* Masonry Portfolio Preview */
+      .masonry-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+        grid-auto-rows: 300px;
+        gap: 1.5rem;
+        margin-top: 4rem;
+      }
+      .masonry-item {
+        position: relative;
+        overflow: hidden;
+      }
+      .masonry-item:nth-child(1) { grid-row: span 2; }
+      .masonry-item:nth-child(4) { grid-row: span 2; }
+      .masonry-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+      .masonry-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+        background: linear-gradient(transparent, rgba(44, 44, 44, 0.8));
+        color: var(--color-white);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      
+      @media (hover: hover) {
+        .masonry-item:hover img {
+          transform: scale(1.05);
+        }
+        .masonry-item:hover .masonry-overlay {
+          opacity: 1;
+        }
+      }
+
+      /* Core Advantages */
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+        margin-top: 4rem;
+        text-align: center;
+      }
+      .feature-icon {
+        font-size: 3rem;
+        color: var(--color-accent);
+        margin-bottom: 1.5rem;
+      }
+
+      /* CTA Section */
+      .cta-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .split-section { flex-direction: column; }
+        .split-text { padding: 15% 5%; }
+        .features-grid { grid-template-columns: 1fr; gap: 2rem; }
+        .hero h1 { margin-top: 1rem; }
+      }
+    </style>
+  </head>
+  <body data-header-theme="transparent">
+    <div id="preloader" class="site-preloader">
+      <div class="preloader-text">大雋室內裝潢設計工作室</div>
+    </div>
+    
+    <main>
+      <!-- Hero Section -->
+      <section class="hero fade-up">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=80" alt="Interior Architecture" class="hero-bg" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-up stagger-2">
+          <span class="hero-subtitle text-sm">專注中高級住宅設計</span>
+          <h1 class="heading-large" style="margin-bottom: 3rem;">為生活留白，<br>為靈魂造境。</h1>
+          <a href="/portfolio.html" class="btn btn-outline-light">探索空間故事</a>
+        </div>
+        <div class="scroll-hint">
+          <div class="scroll-hint-line"></div>
+          <span class="scroll-hint-text">Scroll</span>
+        </div>
+      </section>
+
+      <!-- Brand Manifesto -->
+      <section class="split-section">
+        <div class="split-text fade-up">
+          <h2 class="heading-medium" style="margin-bottom: 2rem;">最好的設計，<br>是看不見設計的痕跡。</h2>
+          <p class="text-lead" style="color: var(--color-accent); margin-bottom: 2rem;">The best design is invisible.</p>
+          <p>我們深信，空間不應僅是建材的堆疊，而是承載生活軌跡的容器。透過精準的比例、溫潤的材質與隱形的美學，為每位居者打造能沉澱心靈的專屬避風港。</p>
+          <a href="/about.html" class="btn btn-outline" style="margin-top: 2rem;">了解我們的哲學</a>
+        </div>
+        <div class="split-image img-reveal fade-up">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80" alt="Design Details" />
+        </div>
+      </section>
+
+      <!-- Portfolio Preview -->
+      <section class="section container">
+        <div class="text-center fade-up">
+          <h2 class="heading-medium">刻劃不同的生活樣貌</h2>
+          <p>Portfolio</p>
+        </div>
+        
+        <div class="masonry-grid">
+          <!-- Item 1 -->
+          <a href="/case-study.html?id=1" class="masonry-item fade-up stagger-1">
+              <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&w=800&q=80" alt="客廳設計" loading="lazy" />
+              <div class="masonry-overlay">
+                <h3>晨光雅居</h3>
+                <p>Residential</p>
+              </div>
+            </a>
+            <div class="masonry-item stagger-2" style="grid-row: span 2;">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="質感空間" loading="lazy" />
+              <div class="masonry-overlay">
+                <h3>質感疊影</h3>
+                <p>Villa</p>
+              </div>
+            </div>
+            <a href="/portfolio.html" class="masonry-item stagger-3">
+              <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="現代廚房" loading="lazy" />
+            <div class="masonry-overlay">
+              <span class="text-sm" style="color: var(--color-accent);">寵物共居</span>
+              <h3 class="heading-small">貓絮・流光</h3>
+            </div>
+          </a>
+          <!-- Item 4 -->
+          <a href="/case-study.html?id=4" class="masonry-item fade-up stagger-4">
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=800&q=80" alt="學齡家庭" />
+            <div class="masonry-overlay">
+              <span class="text-sm" style="color: var(--color-accent);">學齡家庭</span>
+              <h3 class="heading-small">書香・伴讀</h3>
+            </div>
+          </a>
+        </div>
+        
+        <div class="text-center" style="margin-top: 4rem;">
+          <a href="/portfolio.html" class="btn btn-outline fade-up">檢視所有專案</a>
+        </div>
+      </section>
+
+      <!-- Core Advantages -->
+      <section class="section section-dark">
+        <div class="container fade-up">
+          <div class="text-center">
+            <h2 class="heading-medium">核心優勢</h2>
+            <p style="color: var(--color-accent);">Core Advantages</p>
+          </div>
+          
+          <div class="features-grid">
+            <div class="feature-card fade-up stagger-1">
+              <div class="feature-icon" style="font-family: var(--font-heading); font-size: 2rem; font-weight: 300;">01</div>
+              <h3 class="heading-small">格局破解</h3>
+              <p>精準空間佈局，打破既有框架，釋放空間最大潛力，讓動線更符合真實生活需求。</p>
+            </div>
+            <div class="feature-card fade-up stagger-2">
+              <div class="feature-icon" style="font-family: var(--font-heading); font-size: 2rem; font-weight: 300;">02</div>
+              <h3 class="heading-small">極致收納</h3>
+              <p>隱形美學設計，將龐大的收納機能完美融入牆面與空間線條之中，還給視覺絕對的乾淨。</p>
+            </div>
+            <div class="feature-card fade-up stagger-3">
+              <div class="feature-icon" style="font-family: var(--font-heading); font-size: 2rem; font-weight: 300;">03</div>
+              <h3 class="heading-small">一站式服務</h3>
+              <p>從初步設計提案、工程施作到最終軟裝配置，由專業團隊全權統包，確保最終成果與設計圖零落差。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section" style="background-color: var(--color-primary-bg);">
+        <div class="container fade-up">
+          <h2 class="heading-medium" style="margin-bottom: 2rem;">準備好遇見理想的家了嗎？</h2>
+          <a href="/contact.html" class="btn btn-primary">預約初步諮詢</a>
+        </div>
+      </section>
+      <!-- Marquee Section -->
+      <section class="marquee-section">
+        <div class="marquee-inner">
+          <span class="marquee-text">RESIDENTIAL • COMMERCIAL • RETAIL • STYLING • </span>
+          <span class="marquee-text">RESIDENTIAL • COMMERCIAL • RETAIL • STYLING • </span>
+          <span class="marquee-text">RESIDENTIAL • COMMERCIAL • RETAIL • STYLING • </span>
+        </div>
+      </section>
+
+    </main>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

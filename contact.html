@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#F4F3F0" />
+    <meta name="description" content="預約諮詢大雋室內裝潢設計工作室。透過簡單的條件表單告訴我們您的藍圖，從需求傾聽到完工交屋，享受專業的一站式服務。" />
+    <title>服務與諮詢 | 大雋室內裝潢設計工作室</title>
+    <!-- OpenGraph -->
+    <meta property="og:title" content="服務與諮詢 | 大雋室內裝潢設計工作室">
+    <meta property="og:description" content="透過簡單的條件表單告訴我們您的藍圖，從需求傾聽到完工交屋，享受專業的一站式服務。">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://dajun-studio.com/contact">
+    <meta property="og:type" content="website">
+    <!-- CSS injected by main.js -->
+    <style>
+      .page-header {
+        padding-top: 180px;
+        padding-bottom: 80px;
+        background-color: var(--color-primary-bg);
+      }
+      
+      #process, #contact {
+        scroll-margin-top: 100px;
+      }
+
+      /* Editorial Timeline */
+      .timeline-section {
+        padding: 100px 0;
+      }
+      .timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 4rem;
+      }
+      .timeline-step {
+        display: flex;
+        align-items: baseline;
+        gap: 3rem;
+        border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+        padding-bottom: 3rem;
+      }
+      .timeline-step:last-child {
+        border-bottom: none;
+      }
+      .timeline-number {
+        font-family: var(--font-heading);
+        font-size: clamp(3rem, 5vw, 4.5rem);
+        color: var(--color-light-grey);
+        font-weight: 300;
+        line-height: 1;
+        min-width: 80px;
+        transition: color 0.4s ease;
+      }
+      .timeline-step:hover .timeline-number {
+        color: var(--color-primary-text);
+      }
+      .timeline-content {
+        flex: 1;
+      }
+      
+      /* Contact Form Section */
+      .contact-section {
+        background-color: var(--color-primary-bg);
+        padding: 140px 0;
+        border-top: 1px solid rgba(51, 51, 51, 0.1);
+      }
+      .form-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: transparent;
+        padding: 0;
+      }
+      .form-row {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
+      .form-row > * {
+        flex: 1 1 300px;
+      }
+
+      @media (max-width: 768px) {
+        .timeline-step { flex-direction: column; gap: 1rem; }
+        .form-row { flex-direction: column; gap: 1rem; }
+        .page-header { padding-top: 120px; padding-bottom: 40px; }
+        .contact-section { padding: 80px 0; }
+      }
+    </style>
+  </head>
+  <body data-header-theme="light">
+    <div id="preloader" class="site-preloader">
+      <div class="preloader-text">大雋室內裝潢設計工作室</div>
+    </div>
+    
+    <main>
+      <!-- Page Header -->
+      <section class="page-header container">
+        <h1 class="heading-large fade-up">預約諮詢<br><span style="color: var(--color-accent);">Process & Contact</span></h1>
+      </section>
+
+      <!-- Service Process -->
+      <section id="process" class="timeline-section container">
+        <div class="text-center fade-up">
+          <h2 class="heading-medium">服務流程</h2>
+          <p style="color: var(--color-accent);">Service Process</p>
+        </div>
+        
+        <div class="timeline">
+          <div class="timeline-step fade-up stagger-1">
+            <div class="timeline-number">01</div>
+            <div class="timeline-content">
+              <h3 class="heading-small" style="font-size: 1.5rem; margin-bottom: 0.5rem;">需求傾聽</h3>
+              <p class="text-sm">線上或實體面談，深入了解您的生活型態、預算與風格喜好。</p>
+            </div>
+          </div>
+          <div class="timeline-step fade-up stagger-2">
+            <div class="timeline-number">02</div>
+            <div class="timeline-content">
+              <h3 class="heading-small" style="font-size: 1.5rem; margin-bottom: 0.5rem;">現場勘驗與提案</h3>
+              <p class="text-sm">實地丈量，進行初步平面配置規劃與概念提案。</p>
+            </div>
+          </div>
+          <div class="timeline-step fade-up stagger-3">
+            <div class="timeline-number">03</div>
+            <div class="timeline-content">
+              <h3 class="heading-small" style="font-size: 1.5rem; margin-bottom: 0.5rem;">工程施作</h3>
+              <p class="text-sm">簽訂工程合約，由專業團隊嚴格把關施工品質與進度。</p>
+            </div>
+          </div>
+          <div class="timeline-step fade-up stagger-4">
+            <div class="timeline-number">04</div>
+            <div class="timeline-content">
+              <h3 class="heading-small" style="font-size: 1.5rem; margin-bottom: 0.5rem;">完工交屋與保固</h3>
+              <p class="text-sm">軟裝進場佈置，點交確認無誤，並提供一年完善保固。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section id="contact" class="contact-section">
+        <div class="container form-container fade-up">
+          <h2 class="heading-medium" style="margin-bottom: 3rem;">告訴我們您的藍圖</h2>
+          
+          <form id="contact-form">
+            <!-- Success Message Container (Hidden by default) -->
+            <div id="form-success" style="display: none; text-align: center; padding: 4rem 2rem; background: var(--color-white); border: 1px solid var(--color-light-grey); margin-bottom: 2rem;">
+              <div style="font-size: 3rem; margin-bottom: 1rem;">✨</div>
+              <h3 class="heading-medium" style="margin-bottom: 1rem;">感謝您的預約</h3>
+              <p class="text-lead" style="color: var(--color-primary-text);">我們已收到您的資訊，設計團隊將於 1-2 個工作天內與您聯繫。</p>
+            </div>
+            
+            <div id="form-fields">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">姓名 Name</label>
+                <input type="text" class="form-control" placeholder="請輸入姓名" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">電話 Phone</label>
+                <input type="tel" class="form-control" placeholder="請輸入聯絡電話" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="請輸入電子信箱" />
+            </div>
+
+            <div class="form-group" style="margin-top: 2rem;">
+              <label class="form-label">屋況 Type</label>
+              <div class="custom-options">
+                <div class="custom-option">
+                  <input type="radio" id="type1" name="house-type" value="預售屋" checked>
+                  <label for="type1">預售屋</label>
+                </div>
+                <div class="custom-option">
+                  <input type="radio" id="type2" name="house-type" value="新成屋">
+                  <label for="type2">新成屋</label>
+                </div>
+                <div class="custom-option">
+                  <input type="radio" id="type3" name="house-type" value="中古/老屋翻新">
+                  <label for="type3">中古/老屋翻新</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">坪數 Size (室內實坪)</label>
+              <div class="custom-options">
+                <div class="custom-option">
+                  <input type="radio" id="size1" name="house-size" value="20坪以下" checked>
+                  <label for="size1">20坪以下</label>
+                </div>
+                <div class="custom-option">
+                  <input type="radio" id="size2" name="house-size" value="20-40坪">
+                  <label for="size2">20-40坪</label>
+                </div>
+                <div class="custom-option">
+                  <input type="radio" id="size3" name="house-size" value="40-60坪">
+                  <label for="size3">40-60坪</label>
+                </div>
+                <div class="custom-option">
+                  <input type="radio" id="size4" name="house-size" value="60坪以上">
+                  <label for="size4">60坪以上</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">預算區間 Budget (不含家電軟裝)</label>
+              <div class="custom-options">
+                <div class="custom-option">
+                  <input type="radio" id="budget1" name="budget" value="150萬-250萬" checked>
+                  <label for="budget1">150萬 - 250萬</label>
+                </div>
+                <div class="custom-option">
+                  <input type="radio" id="budget2" name="budget" value="250萬-400萬">
+                  <label for="budget2">250萬 - 400萬</label>
+                </div>
+                <div class="custom-option">
+                  <input type="radio" id="budget3" name="budget" value="400萬以上">
+                  <label for="budget3">400萬以上</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">備註 / 需求描述 Message</label>
+              <textarea class="form-control" rows="4" placeholder="請簡單描述您的裝潢需求或想法…" style="resize: vertical; min-height: 100px;"></textarea>
+            </div>
+
+            <div class="form-group" style="margin-top: 3rem;">
+              <button type="submit" class="btn btn-primary" style="width: 100%;">送出預約 Send</button>
+            </div>
+            </div>
+          </form>
+          
+          <script>
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+              e.preventDefault();
+              
+              // Fade out fields
+              const fields = document.getElementById('form-fields');
+              const success = document.getElementById('form-success');
+              
+              fields.style.transition = 'opacity 0.4s ease';
+              fields.style.opacity = '0';
+              
+              setTimeout(() => {
+                fields.style.display = 'none';
+                success.style.display = 'block';
+                // Simple fade in
+                success.animate([
+                  { opacity: 0, transform: 'translateY(10px)' },
+                  { opacity: 1, transform: 'translateY(0)' }
+                ], {
+                  duration: 600,
+                  easing: 'ease-out',
+                  fill: 'forwards'
+                });
+                
+                // Scroll to message
+                window.scrollTo({
+                  top: document.getElementById('contact').offsetTop - 100,
+                  behavior: 'smooth'
+                });
+              }, 400);
+            });
+          </script>
+        </div>
+      </section>
+    </main>
+    
+    <!-- Scripts -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
