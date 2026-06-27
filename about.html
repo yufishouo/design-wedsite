@@ -1,130 +1,154 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#F4F3F0" />
-    <meta name="description" content="關於大雋室內裝潢設計工作室。褪去繁複，回歸純粹，我們用無懈可擊的工藝與直覺動線，為使用者打造安定的避風港。" />
-    <title>設計哲學 About | 大雋室內裝潢設計工作室</title>
-    <!-- OpenGraph -->
-    <meta property="og:title" content="設計哲學 | 大雋室內裝潢設計工作室">
-    <meta property="og:description" content="褪去繁複，回歸純粹。我們用無懈可擊的工藝與直覺動線，為使用者打造安定的避風港。">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
-    <meta property="og:url" content="https://dajun-studio.com/about">
-    <meta property="og:type" content="website">
-    <!-- CSS injected by main.js -->
-    <style>
-      .about-header {
-        padding-top: 180px;
-        padding-bottom: 80px;
-        background-color: var(--color-primary-bg);
-      }
-      
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F4F3F0" />
+  <meta name="description" content="關於大雋室內裝潢設計工作室。褪去繁複，回歸純粹，我們用無懈可擊的工藝與直覺動線，為使用者打造安定的避風港。" />
+  <title>設計哲學 About | 大雋室內裝潢設計工作室</title>
+  <!-- OpenGraph -->
+  <meta property="og:title" content="設計哲學 | 大雋室內裝潢設計工作室">
+  <meta property="og:description" content="褪去繁複，回歸純粹。我們用無懈可擊的工藝與直覺動線，為使用者打造安定的避風港。">
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:url" content="https://dajun-studio.com/about">
+  <meta property="og:type" content="website">
+  <!-- CSS injected by main.js  -->
+  <style>
+    .about-header {
+      padding-top: 180px;
+      padding-bottom: 80px;
+      background-color: var(--color-primary-bg);
+    }
+
+    .magazine-split {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 4rem 0 8rem;
+    }
+
+    .magazine-img {
+      flex: 1 1 40%;
+      min-width: 300px;
+    }
+
+    .magazine-img img {
+      width: 100%;
+      height: auto;
+      filter: grayscale(100%);
+    }
+
+    .magazine-text {
+      flex: 1 1 60%;
+      min-width: 300px;
+      padding: 4% 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .logo-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 4rem;
+      padding: 4rem 0;
+      opacity: 0.5;
+      filter: grayscale(100%);
+      transition: all 0.3s ease;
+    }
+
+    .logo-cloud:hover {
+      opacity: 0.8;
+    }
+
+    .logo-item {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--color-primary-text);
+    }
+
+    @media (max-width: 768px) {
       .magazine-split {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 4rem 0 8rem;
-      }
-      .magazine-img {
-        flex: 1 1 40%;
-        min-width: 300px;
-      }
-      .magazine-img img {
-        width: 100%;
-        height: auto;
-        filter: grayscale(100%);
-      }
-      .magazine-text {
-        flex: 1 1 60%;
-        min-width: 300px;
-        padding: 4% 8%;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
+        margin: 2rem 0 4rem;
       }
-      
+
+      .magazine-text {
+        padding: 10% 5%;
+      }
+
       .logo-cloud {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 4rem;
-        padding: 4rem 0;
-        opacity: 0.5;
-        filter: grayscale(100%);
-        transition: all 0.3s ease;
-      }
-      .logo-cloud:hover {
-        opacity: 0.8;
-      }
-      .logo-item {
-        font-family: var(--font-heading);
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: var(--color-primary-text);
+        gap: 2rem;
       }
 
-      @media (max-width: 768px) {
-        .magazine-split { flex-direction: column; margin: 2rem 0 4rem; }
-        .magazine-text { padding: 10% 5%; }
-        .logo-cloud { gap: 2rem; }
-        .about-header { padding-top: 120px; padding-bottom: 40px; }
+      .about-header {
+        padding-top: 120px;
+        padding-bottom: 40px;
       }
-    </style>
-  </head>
-  <body data-header-theme="light">
-    <div id="preloader" class="site-preloader">
-      <div class="preloader-text">大雋室內裝潢設計工作室</div>
-    </div>
-    
-    <main>
-      <!-- Page Header -->
-      <section class="about-header container">
-        <h1 class="heading-large fade-up">設計哲學<br><span style="color: var(--color-accent);">About Us</span></h1>
-      </section>
+    }
+  </style>
+</head>
 
-      <!-- Director's Philosophy -->
-      <section class="container">
-        <div class="magazine-split">
-          <div class="magazine-img img-reveal fade-up">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Design Director" />
-          </div>
-          <div class="magazine-text fade-up stagger-2">
-            <h2 class="heading-medium" style="margin-bottom: 2rem;">褪去繁複，回歸純粹。</h2>
-            <p class="text-lead" style="margin-bottom: 2rem;">「空間的核心在於乘載生活，而非炫耀設計技巧。」</p>
-            <p>在大雋室內裝潢設計工作室，我們深信最好的設計是無痕的。我們專注於光影的流動、材質的溫度，與動線的直覺性。以豐富的實務經驗，從使用者的真實視角出發，將生活中的不便化解於無形。</p>
-            <p>我們不盲從流行，而是透過細膩的對話，挖掘居者內心對家的真實渴望。從高階住宅到各式家庭型態，我們皆以精準的比例與嚴謹的工藝，為您的生活留白，為靈魂造境。</p>
-            <div style="margin-top: 3rem;">
-              <span style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 600;">設計總監 蔡佳吟</span>
-            </div>
+<body data-header-theme="light">
+  <div id="preloader" class="site-preloader">
+    <div class="preloader-text">大雋室內裝潢設計工作室</div>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="about-header container">
+      <h1 class="heading-large fade-up">設計哲學<br><span style="color: var(--color-accent);">About Us</span></h1>
+    </section>
+
+    <!-- Director's Philosophy -->
+    <section class="container">
+      <div class="magazine-split">
+        <div class="magazine-img img-reveal fade-up">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+            alt="Design Director" />
+        </div>
+        <div class="magazine-text fade-up stagger-2">
+          <h2 class="heading-medium" style="margin-bottom: 2rem;">褪去繁複，回歸純粹。</h2>
+          <p class="text-lead" style="margin-bottom: 2rem;">「空間的核心在於乘載生活，而非炫耀設計技巧。」</p>
+          <p>在大雋室內裝潢設計工作室，我們深信最好的設計是無痕的。我們專注於光影的流動、材質的溫度，與動線的直覺性。以豐富的實務經驗，從使用者的真實視角出發，將生活中的不便化解於無形。</p>
+          <p>我們不盲從流行，而是透過細膩的對話，挖掘居者內心對家的真實渴望。從高階住宅到各式家庭型態，我們皆以精準的比例與嚴謹的工藝，為您的生活留白，為靈魂造境。</p>
+          <div style="margin-top: 3rem;">
+            <span style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 600;">設計總監 蔡佳吟</span>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Social Proof -->
-      <section class="section section-dark text-center">
-        <div class="container fade-up">
-          <h3 class="text-sm" style="letter-spacing: 0.2em; color: var(--color-accent); text-transform: uppercase;">國際認證與殊榮</h3>
-          <div class="logo-cloud">
-            <div class="logo-item fade-up stagger-1">iF Design Award</div>
-            <div class="logo-item fade-up stagger-2">Red Dot Winner</div>
-            <div class="logo-item fade-up stagger-3">A' Design Award</div>
-            <div class="logo-item fade-up stagger-4">Green Building</div>
-          </div>
+    <!-- Social Proof -->
+    <section class="section section-dark text-center">
+      <div class="container fade-up">
+        <h3 class="text-sm" style="letter-spacing: 0.2em; color: var(--color-accent); text-transform: uppercase;">
+          國際認證與殊榮</h3>
+        <div class="logo-cloud">
+          <div class="logo-item fade-up stagger-1">iF Design Award</div>
+          <div class="logo-item fade-up stagger-2">Red Dot Winner</div>
+          <div class="logo-item fade-up stagger-3">A' Design Award</div>
+          <div class="logo-item fade-up stagger-4">Green Building</div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- CTA -->
-      <section style="padding: 120px 0; text-align: center; background-color: var(--color-primary-bg);">
-        <div class="container fade-up">
-          <h2 class="heading-medium" style="margin-bottom: 1rem;">準備好遇見理想的家了嗎？</h2>
-          <p class="text-lead" style="margin-bottom: 3rem; color: var(--color-accent);">讓我們一起，為您的生活寫下新的篇章。</p>
-          <a href="/contact.html" class="btn btn-primary">預約初步諮詢</a>
-        </div>
-      </section>
-    </main>
-    
-    <!-- Scripts -->
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <!-- CTA -->
+    <section style="padding: 120px 0; text-align: center; background-color: var(--color-primary-bg);">
+      <div class="container fade-up">
+        <h2 class="heading-medium" style="margin-bottom: 1rem;">準備好遇見理想的家了嗎？</h2>
+        <p class="text-lead" style="margin-bottom: 3rem; color: var(--color-accent);">讓我們一起，為您的生活寫下新的篇章。</p>
+        <a href="/contact.html" class="btn btn-primary">預約初步諮詢</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
