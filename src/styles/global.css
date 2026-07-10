@@ -2,12 +2,12 @@
 
 :root {
   /* Color Palette */
-  --color-primary-bg: #F4F3F0; /* Oatmeal White */
-  --color-secondary-bg: #2C2C2C; /* Dark Charcoal Grey */
-  --color-primary-text: #4A4A4A; /* Softened Dark Grey */
-  --color-accent: #B89C82; /* Fog Gold / Milk Tea */
+  --color-primary-bg: #F7F4F0; /* Warm cream / high-end magazine feel */
+  --color-secondary-bg: #211F1E; /* Deep warm black */
+  --color-primary-text: #2C2A29; /* Soft dark charcoal */
+  --color-accent: #958878; /* Elegant muted taupe */
   --color-white: #FFFFFF;
-  --color-light-grey: #E5E5E5;
+  --color-light-grey: #EEEEEE;
   
   /* Typography */
   --font-heading: 'Noto Serif TC', serif;
@@ -34,7 +34,7 @@ body {
   font-family: var(--font-body);
   color: var(--color-primary-text);
   background-color: var(--color-primary-bg);
-  line-height: 1.8;
+  line-height: 2.0; /* Increased line-height for elegance */
   letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,7 +51,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.05rem; /* Slightly larger for readability */
 }
 
 a {
@@ -76,8 +77,8 @@ img {
 }
 
 .section {
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 120px; /* Reduced from 200px to avoid extreme empty space */
+  padding-bottom: 120px;
 }
 
 .section-dark {
@@ -90,12 +91,14 @@ img {
 }
 
 /* Typography utility classes */
-.heading-large { font-size: clamp(2.5rem, 5vw, 4.5rem); }
-.heading-medium { font-size: clamp(2rem, 4vw, 3.5rem); }
+.heading-large { font-size: clamp(3rem, 6vw, 5.5rem); letter-spacing: 0.02em; line-height: 1.15; }
+.heading-medium { font-size: clamp(2.5rem, 4.5vw, 4rem); letter-spacing: 0.02em; line-height: 1.2; }
 .heading-small { font-size: clamp(1.5rem, 3vw, 2.5rem); }
-.text-lead { font-size: 1.25rem; font-weight: 300; }
+.text-lead { font-size: 1.15rem; font-weight: 300; line-height: 2.2; }
 .text-sm {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
 }
 
 /* Marquee Section */

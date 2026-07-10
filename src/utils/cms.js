@@ -74,14 +74,13 @@ export function initCaseStudy() {
   document.getElementById('cs-challenge').innerText = project.challenge;
   document.getElementById('cs-solution').innerText = project.solution;
 
-  // Update Gallery
+  // Update Gallery (Vertical Stack)
   const gallery = document.getElementById('cs-gallery');
   if (gallery) {
     project.gallery.forEach((imgUrl, idx) => {
-      const staggerClass = `stagger-${(idx % 3) + 1}`;
       const item = document.createElement('div');
-      item.className = `gallery-item fade-up ${staggerClass}`;
-      item.innerHTML = `<img src="${imgUrl}" alt="Gallery image ${idx + 1}" loading="lazy" />`;
+      item.className = 'cs-stack-item fade-up';
+      item.innerHTML = `<img src="${imgUrl}" alt="Project details ${idx + 1}" loading="lazy" />`;
       gallery.appendChild(item);
     });
   }

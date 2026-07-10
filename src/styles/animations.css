@@ -1,8 +1,8 @@
-/* Fade Up Animation */
+/* Fade Up Animation (Cinematic but responsive) */
 .fade-up {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1.4s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform: translateY(40px); /* Smooth subtle drop */
+  transition: opacity 1.0s cubic-bezier(0.16, 1, 0.3, 1), transform 1.0s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 
