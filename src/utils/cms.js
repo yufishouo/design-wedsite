@@ -3,19 +3,15 @@ import { initAnimations } from './animations.js';
 
 export function initPortfolioCMS() {
   const grid = document.getElementById('portfolio-grid');
-  const filters = document.querySelectorAll('.filter-btn');
   
-  if (!grid || !filters.length) return;
+  if (!grid) return;
 
-  const renderProjects = (category = 'all', size = 'all') => {
+  const renderProjects = () => {
     grid.innerHTML = ''; 
     let filtered = projectsData;
     
-    if (category !== 'all') filtered = filtered.filter(p => p.category === category);
-    if (size !== 'all') filtered = filtered.filter(p => p.size === size);
-
     if (filtered.length === 0) {
-      grid.innerHTML = '<p class="text-center" style="grid-column: 1/-1;">暫無符合條件的專案。</p>';
+      grid.innerHTML = '<p class="text-center" style="grid-column: 1/-1;">暫無專案。</p>';
       return;
     }
 
@@ -28,7 +24,6 @@ export function initPortfolioCMS() {
         <img src="${project.image}" alt="${project.title}" loading="lazy" />
         <div class="portfolio-card-info">
           <h3 class="heading-small">${project.title}</h3>
-          <span class="text-sm" style="color: var(--color-accent);">${project.category} | ${project.sizeLabel}</span>
         </div>
       `;
       grid.appendChild(card);
@@ -38,24 +33,6 @@ export function initPortfolioCMS() {
   };
 
   renderProjects();
-
-  let currentCategory = 'all';
-  let currentSize = 'all';
-
-  filters.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const type = e.target.dataset.filterType;
-      const val = e.target.dataset.filterValue;
-
-      document.querySelectorAll(`.filter-btn[data-filter-type="${type}"]`).forEach(b => b.classList.remove('active'));
-      e.target.classList.add('active');
-
-      if (type === 'category') currentCategory = val;
-      if (type === 'size') currentSize = val;
-
-      renderProjects(currentCategory, currentSize);
-    });
-  });
 }
 
 export function initCaseStudy() {
@@ -68,7 +45,8 @@ export function initCaseStudy() {
   // Update Hero
   document.getElementById('cs-hero-img').src = project.heroImage;
   document.getElementById('cs-title').innerText = project.title;
-  document.getElementById('cs-meta').innerText = `${project.category} | ${project.sizeLabel} | ${project.members}`;
+  const metaEl = document.getElementById('cs-meta');
+  if(metaEl) metaEl.innerText = ''; // Clear meta text if it exists
 
   // Update Split
   document.getElementById('cs-challenge').innerText = project.challenge;
