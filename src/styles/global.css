@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;500;600&display=swap');
 
 :root {
-  /* Color Palette (Deep Grey & White Monochrome) */
-  --color-primary-bg: #D1D1D6;
-  /* A distinctly deeper, sophisticated grey */
-  --color-secondary-bg: #FFFFFF;
-  /* Pure white for crisp contrast sections */
+  /* Color Palette (Deep Grey & Mid Grey Monochrome) */
+  --color-primary-bg: #B8B8BD;
+  /* An even deeper, solid grey */
+  --color-secondary-bg: #D1D1D6;
+  /* The previous mid-grey */
   --color-primary-text: #1C1C1E;
-  /* Deep graphite text for perfect readability on grey/white */
+  /* Deep graphite text for perfect readability */
   --color-accent: #6E6E73;
   /* Darker grey for accents and secondary text */
   --color-white: #FFFFFF;
-  --color-light-grey: #AEAEB2;
+  --color-light-grey: #9C9C9C;
   /* Mid-grey for borders and lines */
 
   /* Typography */
