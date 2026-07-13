@@ -148,7 +148,7 @@ img {
 .marquee-text {
   font-family: var(--font-heading);
   font-size: clamp(3rem, 6vw, 6rem);
-  color: var(--color-light-grey);
+  color: rgba(28, 28, 30, 0.15); /* Soft graphite with opacity */
   padding-right: 2rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
