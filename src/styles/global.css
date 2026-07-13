@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;500;600&display=swap');
 
 :root {
-  /* Color Palette (Dark Mode - Premium Warm Charcoal) */
-  --color-primary-bg: #121110;
-  /* Rich warm off-black */
-  --color-secondary-bg: #1C1B1A;
-  /* Slightly lighter warm charcoal for sections */
-  --color-primary-text: #E8E6E3;
-  /* Soft warm pearl white */
-  --color-accent: #9B938B;
-  /* Elegant metallic taupe/grey */
+  /* Color Palette (Monochrome Light) */
+  --color-primary-bg: #F5F5F7;
+  /* Clean light grey background */
+  --color-secondary-bg: #E8E8ED;
+  /* Slightly darker concrete grey for sections */
+  --color-primary-text: #1D1D1F;
+  /* Deep graphite text for high contrast */
+  --color-accent: #86868B;
+  /* Neutral grey for accents */
   --color-white: #FFFFFF;
-  --color-light-grey: #33312F;
-  /* Warm dark line/border color */
+  --color-light-grey: #D2D2D7;
+  /* Light grey line/border color */
 
   /* Typography */
   --font-heading: 'Noto Serif TC', serif;
