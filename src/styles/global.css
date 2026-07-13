@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;500;600&display=swap');
 
 :root {
-  /* Color Palette (Dark Mode) */
-  --color-primary-bg: #0D0D0D;
-  /* Deep cinematic black */
-  --color-secondary-bg: #1A1A1A;
-  /* Silent dark grey for sections */
-  --color-primary-text: #EBEBEB;
-  /* Soft pearl white for text */
-  --color-accent: #8C8C8C;
-  /* Metallic grey for accents */
+  /* Color Palette (Dark Mode - Premium Warm Charcoal) */
+  --color-primary-bg: #121110;
+  /* Rich warm off-black */
+  --color-secondary-bg: #1C1B1A;
+  /* Slightly lighter warm charcoal for sections */
+  --color-primary-text: #E8E6E3;
+  /* Soft warm pearl white */
+  --color-accent: #9B938B;
+  /* Elegant metallic taupe/grey */
   --color-white: #FFFFFF;
-  --color-light-grey: #333333;
-  /* Darker border/line color */
+  --color-light-grey: #33312F;
+  /* Warm dark line/border color */
 
   /* Typography */
   --font-heading: 'Noto Serif TC', serif;
@@ -96,7 +96,7 @@ img {
 
 .section-dark {
   background-color: var(--color-secondary-bg);
-  color: var(--color-primary-bg);
+  color: var(--color-primary-text);
 }
 
 .text-center {
