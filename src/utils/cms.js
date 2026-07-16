@@ -56,13 +56,18 @@ export function initCaseStudy() {
   document.getElementById('cs-challenge').innerText = project.challenge;
   document.getElementById('cs-solution').innerText = project.solution;
 
-  // Update Gallery (Vertical Stack)
+  // Update Gallery (Vertical Stack) — entries are { src, caption } objects
   const gallery = document.getElementById('cs-gallery');
   if (gallery) {
-    project.gallery.forEach((imgUrl, idx) => {
-      const item = document.createElement('div');
+    project.gallery.forEach((entry, idx) => {
+      const src = entry.src || entry;
+      const caption = entry.caption || '';
+      const item = document.createElement('figure');
       item.className = 'cs-stack-item fade-up';
-      item.innerHTML = `<img src="${imgUrl}" alt="Project details ${idx + 1}" loading="lazy" />`;
+      item.innerHTML = `
+        <img src="${src}" alt="${project.title} - ${caption || `空間實景 ${idx + 1}`}" loading="lazy" decoding="async" />
+        ${caption ? `<figcaption class="cs-stack-caption">${caption}</figcaption>` : ''}
+      `;
       gallery.appendChild(item);
     });
   }
