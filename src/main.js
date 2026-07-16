@@ -53,6 +53,32 @@ function initSmoothScroll() {
   });
 }
 
+// Soft fade-out when navigating between internal pages
+function initPageTransitions() {
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a');
+    if (!link) return;
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || link.target === '_blank') return;
+
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript')) return;
+
+    const url = new URL(link.href, location.href);
+    if (url.origin !== location.origin) return;
+    // Same-page anchors (e.g. /contact.html#process while on contact) scroll, don't transition
+    if (url.pathname === location.pathname && url.hash) return;
+
+    e.preventDefault();
+    document.body.classList.add('page-leaving');
+    setTimeout(() => { location.href = link.href; }, 320);
+  });
+
+  // Pages restored from the back/forward cache must never stay faded out
+  window.addEventListener('pageshow', () => {
+    document.body.classList.remove('page-leaving');
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initPreloader();
@@ -60,4 +86,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initFooter();
   initAnimations();
+  initPageTransitions();
 });

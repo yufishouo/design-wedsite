@@ -18,6 +18,11 @@
   transform: scale(0.98);
 }
 
+.btn:focus-visible {
+  outline: 1px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
 .btn-primary {
   background-color: var(--color-primary-text);
   color: var(--color-primary-bg);
@@ -68,11 +73,16 @@
 }
 
 .site-header.is-scrolled {
+  height: 64px;
   background-color: rgba(50, 50, 53, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.site-header.is-scrolled .logo {
+  font-size: 1.25rem;
 }
 
 .site-header .container {
@@ -216,8 +226,33 @@
 .site-footer {
   background-color: #121214;
   color: rgba(255, 255, 255, 0.7);
-  padding: 80px 0 40px;
+  padding: 100px 0 40px;
   font-size: 0.9rem;
+}
+
+.footer-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-tagline {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.footer-tagline em {
+  font-style: normal;
+  color: var(--color-accent);
 }
 
 .footer-grid {
@@ -307,6 +342,10 @@
 .form-control:focus {
   outline: none;
   border-bottom-color: var(--color-accent);
+}
+
+.form-control::placeholder {
+  color: rgba(245, 245, 247, 0.35);
 }
 
 textarea.form-control {

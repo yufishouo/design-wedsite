@@ -40,7 +40,6 @@
     .magazine-img img {
       width: 100%;
       height: auto;
-      filter: grayscale(100%);
     }
 
     .magazine-text {
@@ -52,25 +51,32 @@
       justify-content: center;
     }
 
-    .logo-cloud {
+    .service-cloud {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 4rem;
-      padding: 4rem 0;
-      opacity: 0.5;
-      filter: grayscale(100%);
-      transition: all 0.3s ease;
+      gap: 3rem 4rem;
+      padding: 4rem 0 1rem;
     }
 
-    .logo-cloud:hover {
-      opacity: 0.8;
+    .service-item {
+      text-align: center;
     }
 
-    .logo-item {
+    .service-item .service-num {
+      display: block;
       font-family: var(--font-heading);
-      font-size: 1.5rem;
-      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+      color: var(--color-accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .service-item .service-name {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
       color: var(--color-primary-text);
     }
 
@@ -128,16 +134,28 @@
       </div>
     </section>
 
-    <!-- Social Proof -->
+    <!-- Service Scope -->
     <section class="section section-dark text-center">
       <div class="container fade-up">
-        <h3 class="text-sm" style="letter-spacing: 0.2em; color: var(--color-accent); text-transform: uppercase;">
-          國際認證與殊榮</h3>
-        <div class="logo-cloud">
-          <div class="logo-item fade-up stagger-1">iF Design Award</div>
-          <div class="logo-item fade-up stagger-2">Red Dot Winner</div>
-          <div class="logo-item fade-up stagger-3">A' Design Award</div>
-          <div class="logo-item fade-up stagger-4">Green Building</div>
+        <span class="eyebrow">What We Do</span>
+        <h2 class="heading-medium">服務範疇</h2>
+        <div class="service-cloud">
+          <div class="service-item fade-up stagger-1">
+            <span class="service-num">01</span>
+            <span class="service-name">全屋規劃設計</span>
+          </div>
+          <div class="service-item fade-up stagger-2">
+            <span class="service-num">02</span>
+            <span class="service-name">老屋翻新改造</span>
+          </div>
+          <div class="service-item fade-up stagger-3">
+            <span class="service-num">03</span>
+            <span class="service-name">商業空間設計</span>
+          </div>
+          <div class="service-item fade-up stagger-4">
+            <span class="service-num">04</span>
+            <span class="service-name">軟裝陳設佈置</span>
+          </div>
         </div>
       </div>
     </section>

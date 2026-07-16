@@ -25,6 +25,7 @@ export function initPortfolioCMS() {
         <div class="portfolio-card-info">
           <p class="text-sm" style="color: var(--color-accent); margin-bottom: 0.5rem;">${project.category}・${project.sizeLabel}</p>
           <h3 class="heading-small">${project.title}</h3>
+          <span class="portfolio-card-cta">View Case</span>
         </div>
       `;
       grid.appendChild(card);

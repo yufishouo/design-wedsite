@@ -4,16 +4,25 @@ export function initCursor() {
 
   const cursor = document.createElement('div');
   cursor.className = 'custom-cursor';
+  // Stay hidden until the mouse actually moves, so the dot never sits idle mid-screen
+  cursor.style.opacity = '0';
   document.body.appendChild(cursor);
 
   let mouseX = window.innerWidth / 2;
   let mouseY = window.innerHeight / 2;
   let cursorX = mouseX;
   let cursorY = mouseY;
+  let hasMoved = false;
 
   document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
+    if (!hasMoved) {
+      hasMoved = true;
+      cursorX = mouseX;
+      cursorY = mouseY;
+      cursor.style.opacity = '1';
+    }
   });
 
   function render() {

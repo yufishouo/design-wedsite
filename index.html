@@ -52,7 +52,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom, rgba(24, 24, 26, 0.35), rgba(24, 24, 26, 0.45) 55%, rgba(50, 50, 53, 0.75));
+        background: linear-gradient(to bottom, rgba(24, 24, 26, 0.6), rgba(24, 24, 26, 0.35) 22%, rgba(24, 24, 26, 0.45) 55%, rgba(50, 50, 53, 0.78));
         z-index: -1;
       }
       .hero-content {
@@ -116,13 +116,20 @@
         left: 0;
         width: 100%;
         padding: 2rem;
-        background: linear-gradient(transparent, rgba(44, 44, 44, 0.8));
+        background: linear-gradient(transparent, rgba(24, 24, 26, 0.85));
         color: var(--color-white);
         opacity: 0;
         transition: opacity 0.4s ease;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+      }
+      .masonry-view {
+        margin: 0.5rem 0 0;
+        font-size: 0.75rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--color-accent);
       }
       
       @media (hover: hover) {
@@ -218,6 +225,7 @@
             <img src="/images/daheliang/72889.jpg" alt="大河戀・暖居 - 中島餐廚實景" loading="lazy" />
             <div class="masonry-overlay">
               <h3 class="heading-small">大河戀・暖居</h3>
+              <p class="masonry-view">View Case</p>
             </div>
           </a>
           <!-- Item 2: 白金花園 -->
@@ -225,6 +233,7 @@
             <img src="/images/platinum/160341.jpg" alt="白金花園・墨韻 - 石紋電視牆客廳實景" loading="lazy" />
             <div class="masonry-overlay">
               <h3 class="heading-small">白金花園・墨韻</h3>
+              <p class="masonry-view">View Case</p>
             </div>
           </a>
           <!-- Item 3: 清溪翫 -->
@@ -232,6 +241,7 @@
             <img src="/images/qingxi/living.jpg" alt="清溪翫・木語 - 日式木質客廳 3D 渲染" loading="lazy" />
             <div class="masonry-overlay">
               <h3 class="heading-small">清溪翫・木語</h3>
+              <p class="masonry-view">View Case</p>
             </div>
           </a>
         </div>

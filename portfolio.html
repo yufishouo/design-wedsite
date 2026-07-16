@@ -41,7 +41,37 @@
       }
       
       .portfolio-card-info {
-        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid rgba(245, 245, 247, 0.12);
+        position: relative;
+      }
+
+      .portfolio-card-cta {
+        position: absolute;
+        top: 1.4rem;
+        right: 0;
+        font-size: 0.7rem;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--color-accent);
+        opacity: 0;
+        transform: translateX(-8px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+      }
+
+      @media (hover: hover) {
+        .portfolio-card:hover .portfolio-card-cta {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @media (hover: none) {
+        .portfolio-card-cta {
+          opacity: 1;
+          transform: none;
+        }
       }
 
       @media (max-width: 768px) {

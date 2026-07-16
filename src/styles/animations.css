@@ -95,6 +95,15 @@
   transform: translateY(-100%);
 }
 
+/* Repeat visits within a session skip the intro with a fast exit */
+.site-preloader.is-instant {
+  transition-duration: 0.45s;
+}
+.site-preloader.is-instant .preloader-text {
+  animation: none;
+  opacity: 0;
+}
+
 .preloader-text {
   font-family: var(--font-heading);
   font-size: 2rem;
