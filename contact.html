@@ -2,9 +2,13 @@
 <html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#F4F3F0" />
+    <meta name="theme-color" content="#323235" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet" />
     <meta name="description" content="預約諮詢大雋室內裝潢設計工作室。透過簡單的條件表單告訴我們您的藍圖，從需求傾聽到完工交屋，享受專業的一站式服務。" />
     <title>服務與諮詢 | 大雋室內裝潢設計工作室</title>
     <!-- OpenGraph -->
@@ -55,7 +59,7 @@
         transition: color 0.4s ease;
       }
       .timeline-step:hover .timeline-number {
-        color: var(--color-primary-text);
+        color: var(--color-accent);
       }
       .timeline-content {
         flex: 1;
@@ -98,14 +102,15 @@
     <main>
       <!-- Page Header -->
       <section class="page-header container">
-        <h1 class="heading-large fade-up">預約諮詢<br><span style="color: var(--color-white);">Process & Contact</span></h1>
+        <h1 class="heading-large fade-up">預約諮詢<span class="page-header-en">Process &amp; Contact</span></h1>
+        <p class="text-lead fade-up stagger-2" style="color: var(--color-muted); max-width: 620px; margin-top: 2rem;">從需求傾聽到完工交屋，每一步都有專人與您同行。留下您的藍圖，讓我們從一杯茶的時間開始認識彼此。</p>
       </section>
 
       <!-- Service Process -->
       <section id="process" class="timeline-section container">
         <div class="text-center fade-up">
+          <span class="eyebrow">Service Process</span>
           <h2 class="heading-medium">服務流程</h2>
-          <p style="color: var(--color-accent);">Service Process</p>
         </div>
         
         <div class="timeline">
@@ -143,14 +148,16 @@
       <!-- Contact Form -->
       <section id="contact" class="contact-section">
         <div class="container form-container fade-up">
-          <h2 class="heading-medium" style="margin-bottom: 3rem;">告訴我們您的藍圖</h2>
+          <span class="eyebrow">Get in Touch</span>
+          <h2 class="heading-medium" style="margin-bottom: 1rem;">告訴我們您的藍圖</h2>
+          <p style="color: var(--color-muted); margin-bottom: 3rem;">填寫以下資訊，設計團隊將於 1–2 個工作天內主動與您聯繫，安排免費的初步諮詢。</p>
           
           <form id="contact-form">
             <!-- Success Message Container (Hidden by default) -->
-            <div id="form-success" style="display: none; text-align: center; padding: 4rem 2rem; background: var(--color-white); border: 1px solid var(--color-light-grey); margin-bottom: 2rem;">
+            <div id="form-success" style="display: none; text-align: center; padding: 4rem 2rem; background: var(--color-secondary-bg); border: 1px solid rgba(192, 168, 130, 0.35); margin-bottom: 2rem;">
               <div style="font-size: 3rem; margin-bottom: 1rem;">✨</div>
               <h3 class="heading-medium" style="margin-bottom: 1rem;">感謝您的預約</h3>
-              <p class="text-lead" style="color: var(--color-primary-text);">我們已收到您的資訊，設計團隊將於 1-2 個工作天內與您聯繫。</p>
+              <p class="text-lead" style="color: var(--color-primary-text);">我們已收到您的資訊，設計團隊將於 1–2 個工作天內與您聯繫。</p>
             </div>
             
             <div id="form-fields">

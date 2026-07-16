@@ -23,6 +23,16 @@
   color: var(--color-primary-bg);
 }
 
+.btn-outline {
+  border-color: rgba(245, 245, 247, 0.35);
+  color: var(--color-primary-text);
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: var(--color-white);
+}
+
 @media (hover: hover) {
   .btn-primary:hover {
     background-color: var(--color-primary-bg);
@@ -33,13 +43,13 @@
   .btn-outline:hover {
     background-color: var(--color-accent);
     border-color: var(--color-accent);
-    color: var(--color-white);
+    color: #1E1E20;
   }
 
   .btn-outline-light:hover {
     background-color: var(--color-accent);
     border-color: var(--color-accent);
-    color: var(--color-white);
+    color: #1E1E20;
   }
 }
 
@@ -338,13 +348,18 @@ textarea.form-control:focus {
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 0.95rem;
-  color: rgba(74, 74, 74, 0.6);
+  color: rgba(245, 245, 247, 0.5);
 }
 
 .custom-option input:checked ~ label {
   background-color: transparent;
-  color: var(--color-primary-text);
-  border-bottom-color: var(--color-primary-text);
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.custom-option input:focus-visible ~ label {
+  outline: 1px dashed var(--color-accent);
+  outline-offset: 4px;
 }
 
 /* Next Project Banner */
@@ -408,4 +423,24 @@ textarea.form-control:focus {
 
 .custom-option label:hover {
   color: var(--color-primary-text);
+}
+
+/* Feature Cards (Core Advantages) */
+.feature-card {
+  padding: 3rem 2rem;
+  border: 1px solid rgba(245, 245, 247, 0.08);
+  background-color: rgba(255, 255, 255, 0.015);
+  transition: border-color 0.5s ease, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.5s ease;
+}
+
+.feature-card .feature-icon {
+  color: var(--color-accent);
+}
+
+@media (hover: hover) {
+  .feature-card:hover {
+    border-color: rgba(192, 168, 130, 0.35);
+    background-color: rgba(255, 255, 255, 0.03);
+    transform: translateY(-6px);
+  }
 }

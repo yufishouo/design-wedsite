@@ -2,17 +2,23 @@
 <html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#F4F3F0" />
-    <meta name="description" content="大雋室內裝潢設計工作室 - 專注於中高級住宅設計。我們深信最好的設計是隱形的，透過精準比例與材質，為您的靈魂造境。" />
+    <meta name="theme-color" content="#323235" />
+    <meta name="description" content="大雋室內裝潢設計工作室 - 專注於中高級住宅設計。我們深信最好的設計是隱形的，透過精準比例與溫潤材質，為生活留白，為靈魂造境。" />
     <title>大雋室內裝潢設計工作室 | 為生活留白，為靈魂造境</title>
+    <!-- Performance: preconnect to font & image CDNs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet" />
     <!-- OpenGraph -->
     <meta property="og:title" content="大雋室內裝潢設計工作室 | Dajun Studio">
     <meta property="og:description" content="頂級室內設計與空間美學。我們專注於創造極簡、優雅且具備深度的居住體驗。">
     <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
     <meta property="og:url" content="https://dajun-studio.com">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_TW">
     <!-- CSS will be injected by Vite from main.js -->
     <style>
       /* Home Specific Styles */
@@ -34,6 +40,11 @@
         height: 100%;
         object-fit: cover;
         z-index: -2;
+        animation: heroZoom 14s cubic-bezier(0.2, 0.6, 0.3, 1) forwards;
+      }
+      @keyframes heroZoom {
+        from { transform: scale(1.08); }
+        to { transform: scale(1); }
       }
       .hero-overlay {
         position: absolute;
@@ -41,7 +52,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(44, 44, 44, 0.4);
+        background: linear-gradient(to bottom, rgba(24, 24, 26, 0.35), rgba(24, 24, 26, 0.45) 55%, rgba(50, 50, 53, 0.75));
         z-index: -1;
       }
       .hero-content {
@@ -119,6 +130,12 @@
           opacity: 1;
         }
       }
+      /* Touch devices never hover — keep project titles visible */
+      @media (hover: none) {
+        .masonry-overlay {
+          opacity: 1;
+        }
+      }
 
       /* Core Advantages */
       .features-grid {
@@ -157,7 +174,7 @@
     <main>
       <!-- Hero Section -->
       <section class="hero fade-up">
-        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=80" alt="Interior Architecture" class="hero-bg" />
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=80" alt="大雋設計 - 沉靜優雅的住宅空間" class="hero-bg" fetchpriority="high" />
         <div class="hero-overlay"></div>
         <div class="hero-content fade-up stagger-2">
           <span class="hero-subtitle text-sm">專注中高級住宅設計</span>
@@ -173,21 +190,23 @@
       <!-- Brand Manifesto -->
       <section class="split-section">
         <div class="split-text fade-up">
+          <span class="eyebrow">Our Philosophy</span>
           <h2 class="heading-medium" style="margin-bottom: 2rem;">最好的設計，<br>是看不見設計的痕跡。</h2>
           <p class="text-lead" style="color: var(--color-accent); margin-bottom: 2rem;">The best design is invisible.</p>
-          <p>我們深信，空間不應僅是建材的堆疊，而是承載生活軌跡的容器。透過精準的比例、溫潤的材質與隱形的美學，為每位居者打造能沉澱心靈的專屬避風港。</p>
+          <p>我們深信，空間不該只是建材的堆疊，而是承載生活軌跡的容器。透過精準的比例、溫潤的材質與內斂的美學，讓設計退居幕後，讓生活成為主角——為每一位居者，打造能安放心靈的專屬之所。</p>
           <a href="/about.html" class="btn btn-outline" style="margin-top: 2rem;">了解我們的哲學</a>
         </div>
         <div class="split-image img-reveal fade-up">
-          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80" alt="Design Details" />
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80" alt="空間設計細節" loading="lazy" decoding="async" />
         </div>
       </section>
 
       <!-- Portfolio Preview -->
       <section class="section container">
         <div class="text-center fade-up">
+          <span class="eyebrow">Selected Works</span>
           <h2 class="heading-medium">刻劃不同的生活樣貌</h2>
-          <p>Portfolio</p>
+          <p style="color: var(--color-muted); max-width: 560px; margin: 1rem auto 0;">每一個家，都有自己的故事。我們傾聽、觀察，然後以空間回應。</p>
         </div>
         
         <div class="masonry-grid">
@@ -214,7 +233,7 @@
           </a>
           <!-- Item 4 -->
           <a href="/case-study.html?id=4" class="masonry-item fade-up stagger-4">
-            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=800&q=80" alt="學齡家庭" />
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=800&q=80" alt="學齡家庭" loading="lazy" />
             <div class="masonry-overlay">
               <h3 class="heading-small">書香・伴讀</h3>
             </div>
@@ -230,25 +249,25 @@
       <section class="section section-dark">
         <div class="container fade-up">
           <div class="text-center">
+            <span class="eyebrow">Why Dajun</span>
             <h2 class="heading-medium">核心優勢</h2>
-            <p style="color: var(--color-accent);">Core Advantages</p>
           </div>
-          
+
           <div class="features-grid">
             <div class="feature-card fade-up stagger-1">
               <div class="feature-icon" style="font-family: var(--font-heading); font-size: 2rem; font-weight: 300;">01</div>
               <h3 class="heading-small">格局破解</h3>
-              <p>精準空間佈局，打破既有框架，釋放空間最大潛力，讓動線更符合真實生活需求。</p>
+              <p>不受既有隔間束縛，重新梳理光線與動線，釋放空間的最大潛力，讓每一步移動都順應真實的生活節奏。</p>
             </div>
             <div class="feature-card fade-up stagger-2">
               <div class="feature-icon" style="font-family: var(--font-heading); font-size: 2rem; font-weight: 300;">02</div>
               <h3 class="heading-small">極致收納</h3>
-              <p>隱形美學設計，將龐大的收納機能完美融入牆面與空間線條之中，還給視覺絕對的乾淨。</p>
+              <p>以隱形美學為原則，將龐大的收納機能融入牆面與線條之中——雜物各得其所，視覺回歸純粹的乾淨。</p>
             </div>
             <div class="feature-card fade-up stagger-3">
               <div class="feature-icon" style="font-family: var(--font-heading); font-size: 2rem; font-weight: 300;">03</div>
               <h3 class="heading-small">一站式服務</h3>
-              <p>從初步設計提案、工程施作到最終軟裝配置，由專業團隊全權統包，確保最終成果與設計圖零落差。</p>
+              <p>從設計提案、工程施作到軟裝佈置，由同一組專業團隊全程把關，確保完工成果與設計藍圖零落差。</p>
             </div>
           </div>
         </div>
@@ -257,7 +276,8 @@
       <!-- CTA -->
       <section class="cta-section" style="background-color: var(--color-primary-bg);">
         <div class="container fade-up">
-          <h2 class="heading-medium" style="margin-bottom: 2rem;">準備好遇見理想的家了嗎？</h2>
+          <h2 class="heading-medium" style="margin-bottom: 1rem;">準備好遇見理想的家了嗎？</h2>
+          <p class="text-lead" style="color: var(--color-accent); margin-bottom: 3rem;">從一次深度對話開始，讓我們為您的生活寫下新的篇章。</p>
           <a href="/contact.html" class="btn btn-primary">預約初步諮詢</a>
         </div>
       </section>

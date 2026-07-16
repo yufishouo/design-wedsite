@@ -21,8 +21,9 @@ export function initPortfolioCMS() {
       card.href = `/case-study.html?id=${project.id}`;
       card.className = `portfolio-card img-hover-scale fade-up ${staggerClass}`;
       card.innerHTML = `
-        <img src="${project.image}" alt="${project.title}" loading="lazy" />
+        <img src="${project.image}" alt="${project.title}" loading="lazy" decoding="async" />
         <div class="portfolio-card-info">
+          <p class="text-sm" style="color: var(--color-accent); margin-bottom: 0.5rem;">${project.category}・${project.sizeLabel}</p>
           <h3 class="heading-small">${project.title}</h3>
         </div>
       `;
@@ -46,7 +47,10 @@ export function initCaseStudy() {
   document.getElementById('cs-hero-img').src = project.heroImage;
   document.getElementById('cs-title').innerText = project.title;
   const metaEl = document.getElementById('cs-meta');
-  if(metaEl) metaEl.innerText = ''; // Clear meta text if it exists
+  if (metaEl) metaEl.innerText = `${project.category}・${project.sizeLabel}・${project.members}`;
+
+  // Keep the browser tab title in sync with the project
+  document.title = `${project.title}｜${project.category} | 大雋室內裝潢設計工作室`;
 
   // Update Split
   document.getElementById('cs-challenge').innerText = project.challenge;
