@@ -2,10 +2,6 @@ export function initFooter() {
   const footerHTML = `
     <footer class="site-footer fade-up">
       <div class="container">
-        <div class="footer-cta">
-          <p class="footer-tagline">為生活<em>留白</em>，<br>為靈魂<em>造境</em>。</p>
-          <a href="/contact.html" class="btn btn-outline">預約初步諮詢</a>
-        </div>
         <div class="footer-grid">
           <div class="footer-col">
             <h4>大雋室內裝潢設計工作室</h4>
