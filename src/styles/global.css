@@ -35,6 +35,9 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  /* Canvas stays dark at all times — prevents flashes between pages */
+  background-color: #323235;
+  color-scheme: dark;
 }
 
 body {
@@ -47,16 +50,24 @@ body {
   letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  animation: pageEnter 0.6s ease backwards;
 }
 
-/* Page transitions */
+/* Page transitions — fade the CONTENT only, never the body itself.
+   Fading body re-composites the fixed blend-mode texture overlay and
+   causes visible glitches in the background during navigation. */
 @keyframes pageEnter {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-body.page-leaving {
+main {
+  animation: pageEnter 0.6s ease backwards;
+}
+
+body.page-leaving main,
+body.page-leaving .site-header,
+body.page-leaving .site-footer,
+body.page-leaving .back-to-top {
   opacity: 0;
   transition: opacity 0.32s ease;
 }

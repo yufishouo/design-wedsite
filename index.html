@@ -21,6 +21,8 @@
     <meta property="og:locale" content="zh_TW">
     <!-- CSS will be injected by Vite from main.js -->
     <style>
+      /* Critical: keep canvas dark before styles load */
+      html { background-color: #323235; color-scheme: dark; }
       /* Home Specific Styles */
       .hero {
         height: 100vh;
