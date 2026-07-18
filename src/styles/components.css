@@ -380,6 +380,9 @@ textarea.form-control:focus {
 /* Next Project Banner */
 .next-project-banner {
   position: relative;
+  /* Own stacking context so the negative z-index bg image stays
+     inside the banner instead of dropping behind body's background */
+  isolation: isolate;
   overflow: hidden;
   height: 80vh;
   min-height: 500px;
