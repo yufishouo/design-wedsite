@@ -1,0 +1,13 @@
+{
+  "name": "大雋室內裝潢設計工作室",
+  "short_name": "大雋設計",
+  "description": "專注中高級住宅設計的室內設計工作室",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#323235",
+  "theme_color": "#323235",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
