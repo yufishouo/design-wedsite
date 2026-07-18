@@ -10,8 +10,8 @@
   /* Crisp off-white */
   --color-accent: #C0A882;
   /* Soft champagne brass — warm accent against graphite */
-  --color-muted: #9A9A9F;
-  /* Mid-grey for subdued text */
+  --color-muted: #A6A6AC;
+  /* Mid-grey for subdued text (AA contrast on primary bg) */
   --color-white: #FFFFFF;
   --color-light-grey: #4A4A4D;
   /* Mid-grey for borders and lines */
@@ -144,6 +144,24 @@ body::after {
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 900'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.006 0.009' numOctaves='4' seed='23' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncR type='table' tableValues='0 0 0 0 0.25 0.7'/%3E%3CfeFuncG type='table' tableValues='0 0 0 0 0.25 0.7'/%3E%3CfeFuncB type='table' tableValues='0 0 0 0 0.25 0.7'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23w)'/%3E%3C/svg%3E");
   background-size: 900px 900px;
   mix-blend-mode: screen;
+}
+
+/* Skip to content (keyboard users) */
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 1rem;
+  z-index: 10001;
+  background-color: var(--color-accent);
+  color: #1E1E20;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
 }
 
 /* Text Selection */

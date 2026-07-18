@@ -27,8 +27,8 @@ export function initFooter() {
         <div class="footer-bottom">
           <p>&copy; ${new Date().getFullYear()} 大雋室內裝潢設計工作室. All rights reserved.</p>
           <div class="legal-links">
-            <a href="javascript:void(0);" class="text-sm" style="margin-right: 15px;">隱私權政策</a>
-            <a href="javascript:void(0);" class="text-sm">服務條款</a>
+            <a href="/privacy.html" class="text-sm" style="margin-right: 15px;">隱私權政策</a>
+            <a href="/terms.html" class="text-sm">服務條款</a>
           </div>
         </div>
       </div>

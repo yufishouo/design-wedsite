@@ -23,6 +23,11 @@ export function initHeader() {
   // Inject header at the beginning of the body
   document.body.insertAdjacentHTML('afterbegin', headerHTML);
 
+  // Skip link for keyboard users
+  const main = document.querySelector('main');
+  if (main && !main.id) main.id = 'main-content';
+  document.body.insertAdjacentHTML('afterbegin', '<a href="#main-content" class="skip-link">跳至主要內容</a>');
+
   const header = document.querySelector('.site-header');
   
   // Check if we are on a page that needs a light theme header initially (no hero image at top)
@@ -45,9 +50,11 @@ export function initHeader() {
   const siteNav = header.querySelector('.site-nav');
   
   if (toggleBtn && siteNav) {
+    toggleBtn.setAttribute('aria-expanded', 'false');
     toggleBtn.addEventListener('click', () => {
       toggleBtn.classList.toggle('is-active');
       siteNav.classList.toggle('is-open');
+      toggleBtn.setAttribute('aria-expanded', String(siteNav.classList.contains('is-open')));
       
       // Scroll Lock
       if (siteNav.classList.contains('is-open')) {
@@ -66,6 +73,7 @@ export function initHeader() {
       link.addEventListener('click', () => {
         toggleBtn.classList.remove('is-active');
         siteNav.classList.remove('is-open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';
         if (window.scrollY <= 50) {
           header.classList.remove('is-scrolled');

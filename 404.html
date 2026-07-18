@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#323235" />
+    <meta name="robots" content="noindex" />
+    <title>找不到頁面 404 | 大雋室內裝潢設計工作室</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      /* Critical: keep canvas dark before styles load */
+      html { background-color: #323235; color-scheme: dark; }
+      .nf-wrap {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 5%;
+      }
+      .nf-code {
+        font-family: var(--font-heading);
+        font-size: clamp(6rem, 15vw, 10rem);
+        font-weight: 300;
+        color: var(--color-accent);
+        line-height: 1;
+        letter-spacing: 0.1em;
+      }
+      .nf-title {
+        margin-top: 1.5rem;
+      }
+      .nf-desc {
+        color: var(--color-muted);
+        max-width: 480px;
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body data-header-theme="light">
+    <main>
+      <section class="nf-wrap">
+        <div class="nf-code">404</div>
+        <h1 class="heading-medium nf-title">這個空間還在規劃中</h1>
+        <p class="nf-desc">您要找的頁面不存在，或已經搬遷。<br>讓我們帶您回到熟悉的地方。</p>
+        <a href="/" class="btn btn-primary" style="margin-top: 2rem;">回到首頁</a>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
