@@ -73,7 +73,7 @@ body.page-leaving .site-header,
 body.page-leaving .site-footer,
 body.page-leaving .back-to-top {
   opacity: 0;
-  transition: opacity 0.32s ease;
+  transition: opacity 0.22s ease;
 }
 
 /* Refined scrollbar */

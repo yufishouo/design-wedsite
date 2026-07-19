@@ -29,7 +29,22 @@ export function initHeader() {
   document.body.insertAdjacentHTML('afterbegin', '<a href="#main-content" class="skip-link">跳至主要內容</a>');
 
   const header = document.querySelector('.site-header');
-  
+
+  // Mark the current page in the nav so visitors always know where they are
+  const path = location.pathname;
+  const activeHref =
+    path.includes('portfolio') || path.includes('case-study') ? '/portfolio.html'
+    : path.includes('about') ? '/about.html'
+    : path.includes('contact') ? '/contact.html#contact'
+    : null;
+  if (activeHref) {
+    const link = header.querySelector(`.nav-links a[href="${activeHref}"]`);
+    if (link) {
+      link.classList.add('is-active');
+      link.setAttribute('aria-current', 'page');
+    }
+  }
+
   // Check if we are on a page that needs a light theme header initially (no hero image at top)
   const isLightTheme = document.body.dataset.headerTheme === 'light';
   if (isLightTheme) {

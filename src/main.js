@@ -13,6 +13,12 @@ let lenisInstance = null;
 function initSmoothScroll() {
   if (lenisInstance) return; // Prevent multiple initializations
 
+  // Motion-sensitive visitors get the browser's native scrolling
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    initBackToTop(null);
+    return;
+  }
+
   lenisInstance = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -32,16 +38,23 @@ function initSmoothScroll() {
 
   requestAnimationFrame(raf);
 
-  // Back to Top Button
+  initBackToTop(lenisInstance);
+}
+
+function initBackToTop(lenis) {
   const backToTop = document.createElement('a');
   backToTop.href = '#top';
   backToTop.className = 'back-to-top';
   backToTop.innerText = 'Top';
   document.body.appendChild(backToTop);
-  
+
   backToTop.addEventListener('click', (e) => {
     e.preventDefault();
-    lenisInstance.scrollTo(0, { duration: 1.5 });
+    if (lenis) {
+      lenis.scrollTo(0, { duration: 1.5 });
+    } else {
+      window.scrollTo({ top: 0 });
+    }
   });
 
   window.addEventListener('scroll', () => {
@@ -70,7 +83,7 @@ function initPageTransitions() {
 
     e.preventDefault();
     document.body.classList.add('page-leaving');
-    setTimeout(() => { location.href = link.href; }, 320);
+    setTimeout(() => { location.href = link.href; }, 220);
   });
 
   // Pages restored from the back/forward cache must never stay faded out

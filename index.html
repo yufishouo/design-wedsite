@@ -54,6 +54,9 @@
       /* Home Specific Styles */
       .hero {
         height: 100vh;
+        /* Small-viewport units keep the hero (and its Scroll hint) fully
+           visible on phones where the address bar eats part of 100vh */
+        height: 100svh;
         min-height: 600px;
         display: flex;
         align-items: center;
@@ -141,6 +144,8 @@
         object-fit: cover;
         transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
       }
+      /* Title always visible so tiles read as clickable cases,
+         not decorative photos; the VIEW CASE hint appears on hover */
       .masonry-overlay {
         position: absolute;
         bottom: 0;
@@ -149,8 +154,6 @@
         padding: 2rem;
         background: linear-gradient(transparent, rgba(24, 24, 26, 0.85));
         color: var(--color-white);
-        opacity: 0;
-        transition: opacity 0.4s ease;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -161,20 +164,25 @@
         letter-spacing: 0.3em;
         text-transform: uppercase;
         color: var(--color-accent);
+        opacity: 0;
+        transform: translateY(4px);
+        transition: opacity 0.4s ease, transform 0.4s ease;
       }
-      
+
       @media (hover: hover) {
         .masonry-item:hover img {
           transform: scale(1.05);
         }
-        .masonry-item:hover .masonry-overlay {
+        .masonry-item:hover .masonry-view {
           opacity: 1;
+          transform: translateY(0);
         }
       }
-      /* Touch devices never hover — keep project titles visible */
+      /* Touch devices never hover — show the hint permanently */
       @media (hover: none) {
-        .masonry-overlay {
+        .masonry-view {
           opacity: 1;
+          transform: none;
         }
       }
 

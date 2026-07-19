@@ -151,6 +151,15 @@
   }
 }
 
+/* Current page indicator */
+.nav-links a.is-active {
+  color: var(--color-accent) !important;
+}
+
+.nav-links a.is-active::after {
+  width: 100%;
+}
+
 /* Mobile Menu Toggle */
 .menu-toggle {
   display: none;
@@ -256,6 +265,11 @@
 
 .footer-links a:hover {
   color: var(--color-accent);
+}
+
+/* Social channels awaiting real URLs — rendered as quiet text, not links */
+.footer-soon {
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .footer-bottom {

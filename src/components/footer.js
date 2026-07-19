@@ -17,10 +17,12 @@ export function initFooter() {
           </div>
           <div class="footer-col">
             <h4>社群連結</h4>
+            <!-- Plain text until real URLs exist — dead links that do
+                 nothing on click feel broken to visitors -->
             <ul class="footer-links">
-              <li><a href="javascript:void(0);">Instagram</a></li>
-              <li><a href="javascript:void(0);">LINE 官方帳號</a></li>
-              <li><a href="javascript:void(0);">Facebook</a></li>
+              <li><span class="footer-soon">Instagram</span></li>
+              <li><span class="footer-soon">LINE 官方帳號</span></li>
+              <li><span class="footer-soon">Facebook</span></li>
             </ul>
           </div>
         </div>
