@@ -224,9 +224,11 @@
 
 /* Footer */
 .site-footer {
-  background-color: #121214;
+  /* Top edge fades in from the marble so there's no hard cut line;
+     it deepens to near-black to anchor the base of the page. */
+  background: linear-gradient(to bottom, rgba(18, 18, 20, 0) 0%, #17171A 90px, #121214 100%);
   color: rgba(255, 255, 255, 0.7);
-  padding: 80px 0 40px;
+  padding: 110px 0 40px;
   font-size: 0.9rem;
 }
 
@@ -444,11 +446,11 @@ textarea.form-control:focus {
 }
 
 /* Feature Cards (Core Advantages) */
+/* Borderless — no box outlines to chop the marble into a grid. The
+   cards read as content floating on the stone, separated by spacing. */
 .feature-card {
-  padding: 3rem 2rem;
-  border: 1px solid rgba(245, 245, 247, 0.08);
-  background-color: rgba(255, 255, 255, 0.015);
-  transition: border-color 0.5s ease, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.5s ease;
+  padding: 2.5rem 2rem;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .feature-card .feature-icon {
@@ -457,8 +459,6 @@ textarea.form-control:focus {
 
 @media (hover: hover) {
   .feature-card:hover {
-    border-color: rgba(192, 168, 130, 0.35);
-    background-color: rgba(255, 255, 255, 0.03);
     transform: translateY(-6px);
   }
 }
