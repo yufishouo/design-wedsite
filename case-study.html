@@ -33,6 +33,7 @@
         min-height: 600px;
         position: relative;
         isolation: isolate;
+        overflow: hidden;
         display: flex;
         align-items: flex-end;
         padding-bottom: 80px;
@@ -100,8 +101,13 @@
       .cs-stack-item img {
         width: 100%;
         height: auto;
+        /* Reserve space before load: with height:auto a not-yet-loaded
+           lazy image is 0px tall, so it never intersects the viewport and
+           never loads. A floor breaks that deadlock (real heights exceed it). */
+        min-height: 320px;
         max-height: 85vh;
         object-fit: cover;
+        background-color: rgba(255, 255, 255, 0.03);
       }
       .cs-stack-caption {
         margin-top: 1.25rem;

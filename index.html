@@ -63,6 +63,8 @@
         justify-content: center;
         position: relative;
         isolation: isolate;
+        /* Clip the 8% Ken Burns zoom so it can't create a horizontal scrollbar */
+        overflow: hidden;
         text-align: center;
         color: var(--color-white);
       }
