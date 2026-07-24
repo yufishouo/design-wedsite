@@ -16,8 +16,16 @@
         "caption": "開放式客餐廳一氣呵成，鐵件吊架界定場域，光線自陽台一路流淌入室。"
       },
       {
+        "src": "/images/daheliang/72892.jpg",
+        "caption": "入門玄關以木質櫃體搭配石紋馬賽克，端景收納一次到位，回家的第一步就有溫度。"
+      },
+      {
         "src": "/images/daheliang/72884.jpg",
         "caption": "主臥以幾何層板與間接光鋪陳，灰調織品沉澱一日的疲憊。"
+      },
+      {
+        "src": "/images/daheliang/72886.jpg",
+        "caption": "臥室以層板燈帶與紗簾鋪陳，灰調中點入一抹暖黃，柔和而安定。"
       },
       {
         "src": "/images/daheliang/72887.jpg",
@@ -57,6 +65,40 @@
   },
   {
     "id": 3,
+    "title": "光影・大墅",
+    "category": "現代豪墅",
+    "size": "proposal",
+    "sizeLabel": "3D 設計提案",
+    "image": "/images/villa/living.jpg",
+    "heroImage": "/images/villa/living.jpg",
+    "members": "2023",
+    "challenge": "會所級的坪數與樓層挑高，最怕空間流於空曠冷硬，失去『家』該有的溫度與凝聚力。",
+    "solution": "以黑金大理石與溫潤木皮鋪陳基調，金色線板勾勒每一道天花與端景；環繞式的間接照明讓光影在石材上緩緩流動——讓宏大的尺度，依然溫暖、依然聚人。",
+    "gallery": [
+      {
+        "src": "/images/villa/bright.jpg",
+        "caption": "臨窗的客餐廳整面採光，白色量體與庭園綠意相映，開闊而通透。"
+      },
+      {
+        "src": "/images/villa/grand.jpg",
+        "caption": "挑高門廳以樑柱界定場域，天光自二層灑落，入門即是開闊氣度。"
+      },
+      {
+        "src": "/images/villa/master.jpg",
+        "caption": "主臥以菱格繃布床頭搭配金色線板，深色石材地坪沉穩而內斂。"
+      },
+      {
+        "src": "/images/villa/study.jpg",
+        "caption": "對稱書牆環抱書桌，暖光洗亮每一格層架，是閱讀，也是收藏。"
+      },
+      {
+        "src": "/images/villa/dining.jpg",
+        "caption": "獨立餐廳以木質天花與雙面採光鋪陳，一桌一椅，盡是從容。"
+      }
+    ]
+  },
+  {
+    "id": 4,
     "title": "清溪翫・木語",
     "category": "日式木質宅",
     "size": "proposal",
