@@ -47,10 +47,6 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   position: relative;
-  /* Own stacking context so the z-index:-1 marble slab paints between
-     the body background and the content, instead of being pushed to
-     the root layer where the body's own background would cover it. */
-  isolation: isolate;
   letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -100,46 +96,18 @@ html {
   background: var(--color-accent);
 }
 
-/* ============================================================
-   Black-Gold Marble Backdrop (Nero Marquina style)
-   Two layers behind all content:
-   1. html::before : polished sheen — lit from above, viewport-fixed
-                     (light belongs to the room; a fixed gradient has
-                     no pattern to read as a smudge on the screen)
-   2. body::before : the marble slab itself — base + tonal cloud depth
-                     + three vein sets crossing at different angles
-                     (40/-54/-14) so veins never look uni-directional,
-                     all baked into ONE opaque image (no blend mode) and
-                     ABSOLUTE so it scrolls with the page like real stone.
-   Content sections stay transparent so the slab reads continuously;
-   only genuinely-different panels tint the marble with a soft-edged veil.
-   ============================================================ */
-html::before {
+/* Plain graphite backdrop with a whisper of fine grain — simple and
+   understated; the grain only stops large dark areas from banding and
+   reads as a soft matte finish, never a pattern. */
+body::before {
   content: "";
   position: fixed;
   top: 0; left: 0; width: 100vw; height: 100vh;
   pointer-events: none;
-  z-index: 9997;
-  opacity: 0.55;
-  background: radial-gradient(150% 120% at 50% -10%, #D0D0D0 0%, #8A8A8A 42%, #454548 100%);
-  mix-blend-mode: soft-light;
-}
-
-/* Fully-baked marble slab (base + tonal cloud + gold veins) as ONE
-   opaque image — no mix-blend-mode, so it composites reliably even
-   behind content. z-index -1 keeps it behind everything (clean photos)
-   yet above the body's base color; absolute means it scrolls with the
-   page like a real stone slab. */
-body::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: -1;
-  background-image:
-    url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202000%202000'%3E%3Cdefs%3E%3Cpattern%20id='a'%20width='2000'%20height='460'%20patternUnits='userSpaceOnUse'%20patternTransform='rotate(40)'%3E%3Crect%20width='2000'%20height='5'%20y='80'%20fill='%23C0A882'/%3E%3Crect%20width='2000'%20height='2'%20y='210'%20fill='%23B4AE9E'/%3E%3C/pattern%3E%3Cpattern%20id='b'%20width='2000'%20height='560'%20patternUnits='userSpaceOnUse'%20patternTransform='rotate(-54)'%3E%3Crect%20width='2000'%20height='4'%20y='100'%20fill='%23C7B08C'/%3E%3C/pattern%3E%3Cpattern%20id='c'%20width='2000'%20height='340'%20patternUnits='userSpaceOnUse'%20patternTransform='rotate(-14)'%3E%3Crect%20width='2000'%20height='2'%20y='70'%20fill='%239C957F'/%3E%3C/pattern%3E%3Cfilter%20id='w1'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.0035%200.008'%20numOctaves='4'%20seed='11'%20stitchTiles='stitch'%20result='n'/%3E%3CfeDisplacementMap%20in='SourceGraphic'%20in2='n'%20scale='360'%20xChannelSelector='R'%20yChannelSelector='G'/%3E%3C/filter%3E%3Cfilter%20id='w2'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.005%200.007'%20numOctaves='4'%20seed='31'%20stitchTiles='stitch'%20result='n'/%3E%3CfeDisplacementMap%20in='SourceGraphic'%20in2='n'%20scale='300'%20xChannelSelector='R'%20yChannelSelector='G'/%3E%3C/filter%3E%3Cfilter%20id='w3'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.006%200.011'%20numOctaves='3'%20seed='47'%20stitchTiles='stitch'%20result='n'/%3E%3CfeDisplacementMap%20in='SourceGraphic'%20in2='n'%20scale='240'%20xChannelSelector='R'%20yChannelSelector='G'/%3E%3C/filter%3E%3Cfilter%20id='cl'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.0032'%20numOctaves='4'%20seed='3'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%201%20%200%200%200%200%201%20%200%200%200%200%201%20%200.3%200.3%200.3%200%20-0.33'/%3E%3C/filter%3E%3Cfilter%20id='cd'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.0042'%20numOctaves='4'%20seed='27'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='matrix'%20values='0%200%200%200%200%20%200%200%200%200%200%20%200%200%200%200%200%20%200.3%200.3%200.3%200%20-0.35'/%3E%3C/filter%3E%3C/defs%3E%3Crect%20width='2000'%20height='2000'%20fill='%23323235'/%3E%3Crect%20width='2000'%20height='2000'%20filter='url(%23cd)'%20opacity='0.5'/%3E%3Crect%20width='2000'%20height='2000'%20filter='url(%23cl)'%20opacity='0.32'/%3E%3Crect%20width='2000'%20height='2000'%20fill='url(%23a)'%20filter='url(%23w1)'%20opacity='0.62'/%3E%3Crect%20width='2000'%20height='2000'%20fill='url(%23b)'%20filter='url(%23w2)'%20opacity='0.42'/%3E%3Crect%20width='2000'%20height='2000'%20fill='url(%23c)'%20filter='url(%23w3)'%20opacity='0.3'/%3E%3C/svg%3E");
-  background-size: 2000px 2000px;
-  background-repeat: repeat;
+  z-index: 9999;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
 }
 
 /* Skip to content (keyboard users) */
@@ -214,10 +182,8 @@ img {
   padding-bottom: 120px;
 }
 
-/* No panel fill at all — the marble is one continuous surface and
-   sections are told apart by spacing and content alone, so nothing
-   cuts the backdrop into blocks. */
 .section-dark {
+  background-color: var(--color-secondary-bg);
   color: var(--color-primary-text);
 }
 
