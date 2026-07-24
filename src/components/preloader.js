@@ -16,6 +16,7 @@ export function initPreloader() {
   const hidePreloader = () => {
     // Add a small artificial delay for the premium feel
     setTimeout(() => {
+      preloader.setAttribute('aria-hidden', 'true');
       preloader.classList.add('is-loaded');
       document.body.style.overflow = '';
       sessionStorage.setItem('dj-intro-seen', '1');

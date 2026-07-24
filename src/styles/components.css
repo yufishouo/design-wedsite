@@ -336,8 +336,12 @@
   border-bottom-color: var(--color-accent);
 }
 
+.form-control:focus {
+  border-bottom-color: var(--color-accent);
+  outline: none;
+}
 .form-control::placeholder {
-  color: rgba(245, 245, 247, 0.35);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 textarea.form-control {

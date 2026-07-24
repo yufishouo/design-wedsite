@@ -66,7 +66,7 @@ export function initCaseStudy() {
       const item = document.createElement('figure');
       item.className = 'cs-stack-item fade-up';
       item.innerHTML = `
-        <img src="${src}" alt="${project.title} - ${caption || `空間實景 ${idx + 1}`}" loading="lazy" decoding="async" />
+        <img src="${src}" alt="${project.title} - ${caption || `空間實景 ${idx + 1}`}" loading="lazy" decoding="async" onerror="this.parentElement.style.display='none'" />
         ${caption ? `<figcaption class="cs-stack-caption">${caption}</figcaption>` : ''}
       `;
       gallery.appendChild(item);

@@ -51,14 +51,24 @@ export function initHeader() {
     header.classList.add('theme-light');
   }
 
+  const throttle = (fn, wait) => {
+    let time = Date.now();
+    return function() {
+      if ((time + wait - Date.now()) < 0) {
+        fn();
+        time = Date.now();
+      }
+    };
+  };
+
   // Scroll listener for sticky glassmorphism effect
-  window.addEventListener('scroll', () => {
+  window.addEventListener('scroll', throttle(() => {
     if (window.scrollY > 50) {
       header.classList.add('is-scrolled');
     } else {
       header.classList.remove('is-scrolled');
     }
-  });
+  }, 50));
 
   // Mobile Menu Toggle
   const toggleBtn = header.querySelector('.menu-toggle');
