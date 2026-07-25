@@ -421,7 +421,14 @@ textarea.form-control:focus {
   height: 100%;
   object-fit: cover;
   z-index: -2;
-  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, filter 0.8s ease;
+  /* Editorial photography color grading */
+  filter: contrast(1.08) saturate(1.1) brightness(0.95);
+}
+
+.next-project-banner:hover .next-bg {
+  transform: scale(1.05);
+  filter: contrast(1.1) saturate(1.2) brightness(0.85);
 }
 
 .next-project-banner .next-overlay {
