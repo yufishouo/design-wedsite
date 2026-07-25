@@ -154,5 +154,49 @@
         "caption": "次臥結合架高地板與書桌機能，一室兩用，臨窗而讀。"
       }
     ]
+  },
+  {
+    "id": 5,
+    "title": "墨隱・奢華",
+    "category": "現代頂級豪宅",
+    "size": "proposal",
+    "sizeLabel": "3D 設計提案",
+    "image": "/images/dark_luxury/hero.jpg",
+    "heroImage": "/images/dark_luxury/hero.jpg",
+    "members": "2024",
+    "challenge": "如何在深色基調中創造層次，展現極致奢華而不會顯得壓迫？",
+    "solution": "我們以深色石材為主體，巧妙點綴金屬元素與精心設計的間接照明，並透過玻璃材質引入光線與反射，打造出內斂而極具氣場的頂級私宅空間。",
+    "gallery": [
+      {
+        "src": "/images/dark_luxury/gallery_1.jpg",
+        "caption": "暗色系餐廳結合金屬與石材，搭配幾何造型吊燈，展現不凡品味。"
+      },
+      {
+        "src": "/images/dark_luxury/gallery_2.jpg",
+        "caption": "主臥室以木格柵與溫暖的光帶中和深色調的冷冽，提供靜謐的睡眠品質。"
+      },
+      {
+        "src": "/images/dark_luxury/gallery_3.jpg",
+        "caption": "精品級更衣室採用金屬框玻璃門，收納與展示機能完美結合。"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "光語・晨曦",
+    "category": "法式現代優雅",
+    "size": "proposal",
+    "sizeLabel": "3D 設計提案",
+    "image": "/images/light_elegance/hero.jpg",
+    "heroImage": "/images/light_elegance/hero.jpg",
+    "members": "2024",
+    "challenge": "如何讓空間充滿明亮與通透感，同時保有設計的細膩度與優雅的氛圍？",
+    "solution": "以白色大理石為基底，搭配圓弧天花板造型與隱藏燈帶，模糊了銳利的直角，讓空間如晨光般柔和，展現法式優雅與現代極簡的完美平衡。",
+    "gallery": [
+      {
+        "src": "/images/light_elegance/gallery_1.jpg",
+        "caption": "主臥室延續圓弧語彙，床頭間接照明帶來輕盈漂浮的視覺感受。"
+      }
+    ]
   }
 ]
