@@ -84,7 +84,17 @@
       }
 
       @media (max-width: 768px) {
-        .portfolio-grid { grid-template-columns: 1fr; gap: 2rem; }
+        /* The grid is CSS multi-column, so grid-template-columns did
+           nothing here — phones were left with two ~160px cards. */
+        .portfolio-grid { column-count: 1; }
+        .portfolio-card { margin-bottom: 2.5rem; }
+        /* Absolute-positioned CTA collided with the category line on
+           narrow cards; put it back in normal flow. */
+        .portfolio-card-cta {
+          position: static;
+          display: block;
+          margin-top: 0.75rem;
+        }
         .page-header { padding-top: 120px; padding-bottom: 40px; }
         .filter-group { 
           flex-wrap: nowrap; 

@@ -103,7 +103,12 @@
         height: auto;
         /* Reserve space before load */
         min-height: 320px;
-        background-color: rgba(255, 255, 255, 0.03);
+        /* Cap a single photo at roughly one screen so tall portrait shots
+           don't take 2+ screens of scrolling. `contain` (never `cover`)
+           means the whole frame stays visible — the photo is scaled down
+           and centred, so no design detail is ever cropped away. */
+        max-height: 84vh;
+        object-fit: contain;
       }
       .cs-stack-caption {
         margin-top: 1.25rem;
