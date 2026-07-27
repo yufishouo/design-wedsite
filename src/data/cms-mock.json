@@ -81,48 +81,82 @@
   },
   {
     "id": 3,
-    "title": "光影・大墅",
-    "category": "現代豪墅",
+    "title": "白金花園・晴朗",
+    "category": "現代景觀宅",
     "size": "proposal",
     "sizeLabel": "3D 設計提案",
-    "image": "/images/villa/living.jpg",
-    "heroImage": "/images/villa/living.jpg",
-    "members": "2023",
-    "challenge": "會所級的坪數與樓層挑高，最怕空間流於空曠冷硬，失去『家』該有的溫度與凝聚力。",
-    "solution": "以黑金大理石與溫潤木皮鋪陳基調，金色線板勾勒每一道天花與端景；環繞式的間接照明讓光影在石材上緩緩流動——讓宏大的尺度，依然溫暖、依然聚人。",
+    "image": "/images/baijin3d/living2.jpg",
+    "heroImage": "/images/baijin3d/living2.jpg",
+    "members": "桃園",
+    "challenge": "同一個社區、不同的屋主。這一戶擁有整面的落地窗與庭園景，卻也最怕室內的量體擋住了那片綠。",
+    "solution": "我們把公共區域完全打開，讓客廳、餐廚與窗景連成一線；電視牆與收納全部沿牆收整成低矮的水平線條，天花以間接光取代主燈——視線不被打斷，綠意就是最好的主牆。",
     "gallery": [
       {
-        "src": "/images/villa/grand.jpg",
-        "caption": "挑高門廳以樑柱界定場域，天光自二層灑落，入門即是開闊氣度。"
+        "src": "/images/baijin3d/living.jpg",
+        "caption": "電視牆以整面石紋鋪陳，側邊嵌入展示酒櫃，機能與端景在同一道牆上完成。"
       },
       {
-        "src": "/images/villa/foyer.jpg",
-        "caption": "玄關以六角石材拼花鋪地，端景畫與暖光相迎，入門即定調全室語彙。"
+        "src": "/images/baijin3d/dining.jpg",
+        "caption": "餐廳以木質天花收攏尺度，兩側紗簾濾光，長桌之上是一日三餐的從容。"
       },
       {
-        "src": "/images/villa/bright.jpg",
-        "caption": "臨窗的客餐廳整面採光，白色量體與庭園綠意相映，開闊而通透。"
+        "src": "/images/baijin3d/dining2.jpg",
+        "caption": "餐廚與客廳共享同一片落地窗景，中島退位給動線，讓綠意成為背景。"
       },
       {
-        "src": "/images/villa/dining.jpg",
-        "caption": "獨立餐廳以木質天花與雙面採光鋪陳，一桌一椅，盡是從容。"
+        "src": "/images/baijin3d/foyer.jpg",
+        "caption": "玄關以六角石材拼花鋪地，端景畫與燈帶相迎，入門即定調全室語彙。"
       },
       {
-        "src": "/images/villa/master.jpg",
-        "caption": "主臥以菱格繃布床頭搭配金色線板，深色石材地坪沉穩而內斂。"
+        "src": "/images/baijin3d/master.jpg",
+        "caption": "主臥以木格柵環繞床頭，臨窗一側收整為書牆，睡眠與獨處各得其所。"
       },
       {
-        "src": "/images/villa/bedroom.jpg",
-        "caption": "次主臥以大理石電視牆與弧形吊燈鋪陳，臨窗躺椅是屬於獨處的位置。"
+        "src": "/images/baijin3d/kids.jpg",
+        "caption": "孩房以矮櫃與層板收整玩具與書籍，牆面留給童年的顏色。"
       },
       {
-        "src": "/images/villa/study.jpg",
-        "caption": "對稱書牆環抱書桌，暖光洗亮每一格層架，是閱讀，也是收藏。"
+        "src": "/images/baijin3d/bed2.jpg",
+        "caption": "次臥維持極簡，僅以一道層板與掛壁電視完成機能，留白給休息本身。"
       }
     ]
   },
   {
     "id": 4,
+    "title": "天闊・和光",
+    "category": "現代木質宅",
+    "size": "proposal",
+    "sizeLabel": "3D 設計提案",
+    "image": "/images/tiankuo/living2.jpg",
+    "heroImage": "/images/tiankuo/living2.jpg",
+    "members": "11F",
+    "challenge": "屋主希望公共區域夠開闊，卻又擔心開放式格局少了各自獨處的角落——尤其家中有一台鋼琴要安放。",
+    "solution": "客餐廚以一條動線串起，環形吊燈定錨中央；再把書房獨立出來，整面書牆與長桌容納閱讀、工作與鋼琴。開放與私密並存，暖木與燈帶讓每個場域都保持同一種溫度。",
+    "gallery": [
+      {
+        "src": "/images/tiankuo/living.jpg",
+        "caption": "客餐廚一線相連，環形吊燈定錨中央，木質與暖光讓開放空間依然聚人。"
+      },
+      {
+        "src": "/images/tiankuo/study.jpg",
+        "caption": "書房沿牆展開整面書櫃，長桌與鋼琴共處一室，是工作，也是生活的餘裕。"
+      },
+      {
+        "src": "/images/tiankuo/master.jpg",
+        "caption": "主臥以皮革繃布床頭鋪陳暖調，臨窗設置長桌，晨光即是最好的照明。"
+      },
+      {
+        "src": "/images/tiankuo/bed1.jpg",
+        "caption": "次臥將書桌與層架整合於同一道牆，床鋪退至窗邊，動線俐落。"
+      },
+      {
+        "src": "/images/tiankuo/bed2.jpg",
+        "caption": "另一間次臥以木質櫃體收邊，燈帶洗亮層板，尺度不大卻收納俱全。"
+      }
+    ]
+  },
+  {
+    "id": 5,
     "title": "清溪翫・木語",
     "category": "日式木質宅",
     "size": "proposal",
@@ -156,42 +190,88 @@
     ]
   },
   {
-    "id": 5,
-    "title": "墨隱・奢華",
-    "category": "現代頂級豪宅",
+    "id": 6,
+    "title": "沐樂・慢日",
+    "category": "當代生活宅",
     "size": "proposal",
     "sizeLabel": "3D 設計提案",
-    "image": "/images/dark_luxury/gallery_1.jpg",
-    "heroImage": "/images/dark_luxury/gallery_1.jpg",
-    "members": "2024",
-    "challenge": "如何在深色基調中創造層次，展現極致奢華而不會顯得壓迫？",
-    "solution": "我們以深色石材為主體，巧妙點綴金屬元素與精心設計的間接照明，並透過玻璃材質引入光線與反射，打造出內斂而極具氣場的頂級私宅空間。",
+    "image": "/images/mule/living2.jpg",
+    "heroImage": "/images/mule/living2.jpg",
+    "members": "A3",
+    "challenge": "屋主是年輕收藏者，希望家裡既能展示公仔與生活物件，又不能因此顯得雜亂。",
+    "solution": "以淺木鋪滿主要立面，把收納全部藏進牆體，只留幾道層板與檯面作為展示位；弧形轉角柔化了空間的稜線，讓收藏成為端景，而不是堆積。",
     "gallery": [
       {
-        "src": "/images/dark_luxury/gallery_2.jpg",
-        "caption": "主臥室以木格柵與溫暖的光帶中和深色調的冷冽，提供靜謐的睡眠品質。"
+        "src": "/images/mule/living.jpg",
+        "caption": "客廳以白色沙發與淺木鋪陳，開放餐廚在後方延續，動線一氣呵成。"
       },
       {
-        "src": "/images/dark_luxury/gallery_3.jpg",
-        "caption": "精品級更衣室採用金屬框玻璃門，收納與展示機能完美結合。"
+        "src": "/images/mule/master.jpg",
+        "caption": "主臥以木格柵床頭銜接梳妝檯，玻璃門後即是更衣室，起居與整裝無縫接軌。"
+      },
+      {
+        "src": "/images/mule/closet.jpg",
+        "caption": "更衣室以淺木層架環繞，燈帶沿櫃體洗下，衣物本身成為最好的陳列。"
+      },
+      {
+        "src": "/images/mule/bed.jpg",
+        "caption": "次臥將臥榻嵌入窗邊，書桌沿牆配置，小坪數也能兼顧閱讀與休憩。"
       }
     ]
   },
   {
-    "id": 6,
-    "title": "光語・晨曦",
-    "category": "法式現代優雅",
+    "id": 7,
+    "title": "歡喜城・童心",
+    "category": "學齡家庭宅",
     "size": "proposal",
     "sizeLabel": "3D 設計提案",
-    "image": "/images/light_elegance/hero.jpg",
-    "heroImage": "/images/light_elegance/hero.jpg",
-    "members": "2024",
-    "challenge": "如何讓空間充滿明亮與通透感，同時保有設計的細膩度與優雅的氛圍？",
-    "solution": "以白色大理石為基底，搭配圓弧天花板造型與隱藏燈帶，模糊了銳利的直角，讓空間如晨光般柔和，展現法式優雅與現代極簡的完美平衡。",
+    "image": "/images/huanxi/living.jpg",
+    "heroImage": "/images/huanxi/living.jpg",
+    "members": "2大人 2小孩",
+    "challenge": "兩個孩子、有限的坪數。既要讓他們各有自己的角落，又不能讓隔間把家切得零碎。",
+    "solution": "公共區域維持完整不做多餘隔斷，把機能全部推向牆面；孩房則以上下舖與實木階梯向上發展，把地坪還給遊戲——用垂直空間換來水平的自由。",
     "gallery": [
       {
-        "src": "/images/light_elegance/gallery_1.jpg",
-        "caption": "主臥室延續圓弧語彙，床頭間接照明帶來輕盈漂浮的視覺感受。"
+        "src": "/images/huanxi/living2.jpg",
+        "caption": "電視牆以懸浮層板與木質展示櫃收整，餐桌就在幾步之遙。"
+      },
+      {
+        "src": "/images/huanxi/master.jpg",
+        "caption": "主臥採架高床台設計，下方即是收納，燈帶勾勒出臥榻的輕盈。"
+      },
+      {
+        "src": "/images/huanxi/kids.jpg",
+        "caption": "孩房把書桌、層架與床整合成一道連續的牆，從學齡到長大都夠用。"
+      },
+      {
+        "src": "/images/huanxi/bunk.jpg",
+        "caption": "上下舖以實木階梯串連，扶手與踏階同時是收納，是安全，也是遊戲場。"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "京澄泰然・澄澈",
+    "category": "現代優雅宅",
+    "size": "proposal",
+    "sizeLabel": "3D 設計提案",
+    "image": "/images/jingcheng/living.jpg",
+    "heroImage": "/images/jingcheng/living.jpg",
+    "members": "2024",
+    "challenge": "屋主想要明亮通透，但一味的白容易顯得單薄，少了值得細看的層次。",
+    "solution": "以白為底，讓石材的紋理去說話；天花採弧形收邊，隱藏燈帶沿著曲線鋪開，模糊了銳利的直角。再以暖褐色的織品與木皮回溫——通透，但不空。",
+    "gallery": [
+      {
+        "src": "/images/jingcheng/living2.jpg",
+        "caption": "另一側望向客廳，弧形天花與石材端景相互呼應，線條柔和而不銳利。"
+      },
+      {
+        "src": "/images/jingcheng/dining.jpg",
+        "caption": "餐廳以玻璃隔屏輕分場域，暖褐座椅收斂了大面積的白，優雅而不冷。"
+      },
+      {
+        "src": "/images/jingcheng/master.jpg",
+        "caption": "主臥延續圓弧語彙，床頭間接照明沿弧線鋪開，帶來輕盈的漂浮感。"
       }
     ]
   }
