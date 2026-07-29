@@ -156,6 +156,32 @@
     ]
   },
   {
+    "id": 9,
+    "title": "上河・澄光",
+    "category": "現代簡約宅",
+    "size": "proposal",
+    "sizeLabel": "3D 設計提案",
+    "image": "/images/shanghe/living.jpg",
+    "heroImage": "/images/shanghe/living.jpg",
+    "members": "3D",
+    "challenge": "屋主希望一進門就能放鬆——公共空間要通透明亮，臥室則要能真正沉澱下來。",
+    "solution": "客廳以石紋電視牆搭配軌道燈，木質與暖白讓視線一路開闊；臥室反其道而行，收斂色彩、放大留白，把最純粹的安靜留給睡眠本身。",
+    "gallery": [
+      {
+        "src": "/images/shanghe/master.jpg",
+        "caption": "主臥以懸浮床台與木格柵床頭鋪陳，燈帶自牆面洗下，臥榻宛如浮於地面。"
+      },
+      {
+        "src": "/images/shanghe/bed1.jpg",
+        "caption": "次臥以木質橫紋床頭銜接梳妝檯，一室之內兼顧睡眠與整裝。"
+      },
+      {
+        "src": "/images/shanghe/bed2.jpg",
+        "caption": "另一間次臥將書桌沿窗展開，層板收整生活物件，臨窗即是書房。"
+      }
+    ]
+  },
+  {
     "id": 5,
     "title": "清溪翫・木語",
     "category": "日式木質宅",
@@ -190,6 +216,40 @@
     ]
   },
   {
+    "id": 10,
+    "title": "天闊・映境",
+    "category": "景觀採光宅",
+    "size": "proposal",
+    "sizeLabel": "3D 設計提案",
+    "image": "/images/tka1/living.jpg",
+    "heroImage": "/images/tka1/living.jpg",
+    "members": "A1-10F",
+    "challenge": "大坪數最怕一眼望穿卻無層次；屋主希望公共廳區既開闊，又能有值得駐足的端景。",
+    "solution": "以一道弧形玻璃屏風界定玄關與客廳，灰石地坪映著光影延伸入室；客廳沿整面落地窗環繞書牆與展示櫃，讓開闊的尺度處處有細節可看，也把窗外的遠景收進日常。",
+    "gallery": [
+      {
+        "src": "/images/tka1/foyer.jpg",
+        "caption": "玄關以弧形玻璃屏風分界，灰石地坪如鏡面延展，端景在光影裡若隱若現。"
+      },
+      {
+        "src": "/images/tka1/living2.jpg",
+        "caption": "客廳沿整面落地窗環繞，遠山近窗都成為背景，量體全數貼牆收整。"
+      },
+      {
+        "src": "/images/tka1/living3.jpg",
+        "caption": "另一角以展示櫃與臥榻界定閱讀區，暖光洗亮層板上的收藏。"
+      },
+      {
+        "src": "/images/tka1/master.jpg",
+        "caption": "主臥以木質衣牆環繞，弧形天花收邊，動線俐落而不壓迫。"
+      },
+      {
+        "src": "/images/tka1/bed.jpg",
+        "caption": "次臥以木格柵床頭與臨窗書桌鋪陳，尺度精巧卻機能俱全。"
+      }
+    ]
+  },
+  {
     "id": 6,
     "title": "沐樂・慢日",
     "category": "當代生活宅",
@@ -220,6 +280,40 @@
     ]
   },
   {
+    "id": 11,
+    "title": "天闊・書香",
+    "category": "溫馨木質宅",
+    "size": "proposal",
+    "sizeLabel": "3D 設計提案",
+    "image": "/images/tk6f/living.jpg",
+    "heroImage": "/images/tk6f/living.jpg",
+    "members": "6F",
+    "challenge": "屋主藏書多、也需要獨立的閱讀與工作角落，卻不想讓書牆佔滿整個家。",
+    "solution": "把書房獨立成一方天地，整面木質書牆收整藏書；公共區域則維持清爽的木質與暖白，讓閱讀的重量集中在一處，其餘留白給生活。",
+    "gallery": [
+      {
+        "src": "/images/tk6f/living2.jpg",
+        "caption": "客廳以石紋電視牆與木質展示櫃相接，暖光沿天花洗下，開放而不失層次。"
+      },
+      {
+        "src": "/images/tk6f/study.jpg",
+        "caption": "書房以整面木質書牆環繞長桌，燈帶沿層板洗下，是閱讀，也是收藏的所在。"
+      },
+      {
+        "src": "/images/tk6f/master.jpg",
+        "caption": "主臥以木質衣牆與間接光鋪陳，臨窗一側留白，睡眠與獨處各得其所。"
+      },
+      {
+        "src": "/images/tk6f/bed1.jpg",
+        "caption": "次臥將書桌與層架整合於一牆，床鋪臨窗，動線清爽。"
+      },
+      {
+        "src": "/images/tk6f/bed2.jpg",
+        "caption": "另一間次臥以淺木收邊，燈帶勾勒層板，尺度精巧而收納俱全。"
+      }
+    ]
+  },
+  {
     "id": 7,
     "title": "歡喜城・童心",
     "category": "學齡家庭宅",
@@ -246,6 +340,32 @@
       {
         "src": "/images/huanxi/bunk.jpg",
         "caption": "上下舖以實木階梯串連，扶手與踏階同時是收納，是安全，也是遊戲場。"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "天闊・暖韻",
+    "category": "現代質感宅",
+    "size": "proposal",
+    "sizeLabel": "3D 設計提案",
+    "image": "/images/tka2/living.jpg",
+    "heroImage": "/images/tka2/living.jpg",
+    "members": "A2-18F",
+    "challenge": "屋主偏好溫暖的木質，卻也希望空間有幾分現代的俐落與重量感，不流於一味的柔和。",
+    "solution": "以淺木鋪陳主要立面帶來暖意，再以黑色石材中島與展示櫃壓出重心；落地窗引入兩側採光，讓木質的溫潤與石材的冷冽在同一個空間裡達成平衡。",
+    "gallery": [
+      {
+        "src": "/images/tka2/living2.jpg",
+        "caption": "客廳向餐廚一側望去，深色中島與淺木櫃體相襯，冷暖在動線上交會。"
+      },
+      {
+        "src": "/images/tka2/dining.jpg",
+        "caption": "餐廚以黑色石材中島為核心，木質天花收攏尺度，料理與用餐共處一室。"
+      },
+      {
+        "src": "/images/tka2/master.jpg",
+        "caption": "主臥以木質電視牆銜接衣櫃，掛壁螢幕嵌入牆體，臥房也有起居的從容。"
       }
     ]
   },
